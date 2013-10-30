@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Sweet</key>
+	<string></string>
+	<key>Spicy</key>
+	<string></string>
+	<key>Bitter</key>
+	<string></string>
+	<key>Solty</key>
+	<string></string>
+	<key>Acid</key>
+	<string></string>
+</dict>
+</plist>
