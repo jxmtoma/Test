@@ -7,13 +7,14 @@
 //
 
 #import "TableViewController.h"
+#import "HomeViewController.h"
 
 @interface TableViewController ()
 
 @end
 
 @implementation TableViewController
-@synthesize flavor, flavorKeys;
+@synthesize flavor, flavorKeys,tablesView;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -50,10 +51,31 @@
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
     return @"Flavors:";
 }
-//- (void)tableView:(UITableView *)tableView didDeselectRowAtIndexPath:(NSIndexPath *)indexPath NS_AVAILABLE_IOS(3_0) {
-//    UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
-//    cell.accessoryType = UITableViewCellAccessoryNone;
-//}
+- (void)tableView:(UITableView *)tableView didDeselectRowAtIndexPath:(NSIndexPath *)indexPath NS_AVAILABLE_IOS(3_0) {
+    UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
+    cell.accessoryType = UITableViewCellAccessoryNone;
+}
+
+-(NSArray *)selectedItems {
+    NSMutableArray *result = [[NSMutableArray alloc] init];
+    
+    for (NSIndexPath *rows in [self.tablesView indexPathsForSelectedRows]) {
+        
+        UITableViewCell *cell = [self.tablesView cellForRowAtIndexPath:rows];
+        //NSLog(@"%@", cell.textLabel.text);
+        [result addObject:cell.textLabel.text];
+    }
+    return result;
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    UITabBarController *controller = segue.destinationViewController;
+    UINavigationController *navController = [[controller customizableViewControllers] objectAtIndex:0];
+    HomeViewController *homeView = [[HomeViewController alloc] init];
+    homeView = [[navController viewControllers] objectAtIndex:0];
+    homeView.selectedRows = [self selectedItems];
+    
+}
 
 - (void)viewDidLoad
 {
@@ -62,6 +84,7 @@
     NSString *flavorFile = [[NSBundle mainBundle] pathForResource:@"Flavor" ofType:@"plist"];
     flavor = [[NSDictionary alloc] initWithContentsOfFile:flavorFile];
     flavorKeys = [flavor allKeys];
+    self.tablesView.allowsMultipleSelection = YES;
     
 }
 

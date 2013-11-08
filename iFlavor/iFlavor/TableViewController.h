@@ -12,6 +12,7 @@
 
 @property (nonatomic, strong) NSDictionary *flavor;
 @property (nonatomic, strong) NSArray *flavorKeys;
+@property (nonatomic, strong) IBOutlet UITableView *tablesView;
 
 
 @end

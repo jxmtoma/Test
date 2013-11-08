@@ -16,13 +16,10 @@
 @implementation ViewController
 @synthesize userName, password;
 
-- (IBAction)submit:(UIButton *)sender {
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     [userName resignFirstResponder];
     [password resignFirstResponder];
-    //check the username here
-    
-//    TableViewController *tableView = [[TableViewController alloc] initWithNibName:@"TableView" bundle:Nil];
-//    [self.view addSubview:tableView.view];
+    //user login check
 }
 
 - (IBAction)dismiss:(UIButton *)sender {

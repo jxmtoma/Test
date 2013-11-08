@@ -13,7 +13,6 @@
 @property (nonatomic, strong) IBOutlet UITextField *userName;
 @property (nonatomic, strong) IBOutlet UITextField *password;
 
--(IBAction)submit:(UIButton *)sender;
 -(IBAction)dismiss:(UIButton *)sender;
 
 @end

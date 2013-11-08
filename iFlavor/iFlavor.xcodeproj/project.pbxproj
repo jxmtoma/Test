@@ -13,7 +13,6 @@
 		5A12915A181F280800B0D258 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5A129158181F280800B0D258 /* InfoPlist.strings */; };
 		5A12915C181F280800B0D258 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A12915B181F280800B0D258 /* main.m */; };
 		5A129160181F280800B0D258 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A12915F181F280800B0D258 /* AppDelegate.m */; };
-		5A129163181F280800B0D258 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A129161181F280800B0D258 /* Main.storyboard */; };
 		5A129166181F280800B0D258 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A129165181F280800B0D258 /* ViewController.m */; };
 		5A129168181F280800B0D258 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A129167181F280800B0D258 /* Images.xcassets */; };
 		5A12916F181F280800B0D258 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A12916E181F280800B0D258 /* XCTest.framework */; };
@@ -26,6 +25,10 @@
 		5A208BBD1820207F0013CB88 /* Flavor.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5A208BBC1820207F0013CB88 /* Flavor.plist */; };
 		5A208BC01820211D0013CB88 /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A208BBF1820211D0013CB88 /* RegisterViewController.m */; };
 		5A208BC3182034950013CB88 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A208BC2182034950013CB88 /* TableViewController.m */; };
+		5A4217BC1822F27C00A0088E /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A4217BB1822F27C00A0088E /* HomeViewController.m */; };
+		5A4217BF18233A0D00A0088E /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A4217BE18233A0D00A0088E /* SettingViewController.m */; };
+		5A4217C218233A9800A0088E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A4217C018233A9800A0088E /* Main.storyboard */; };
+		5A4217C51823691300A0088E /* Setting.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A4217C41823691300A0088E /* Setting.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,7 +52,6 @@
 		5A12915D181F280800B0D258 /* iFlavor-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iFlavor-Prefix.pch"; sourceTree = "<group>"; };
 		5A12915E181F280800B0D258 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		5A12915F181F280800B0D258 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		5A129162181F280800B0D258 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5A129164181F280800B0D258 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		5A129165181F280800B0D258 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		5A129167181F280800B0D258 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -65,6 +67,13 @@
 		5A208BBF1820211D0013CB88 /* RegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = "<group>"; };
 		5A208BC1182034950013CB88 /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
 		5A208BC2182034950013CB88 /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
+		5A4217BA1822F27C00A0088E /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		5A4217BB1822F27C00A0088E /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		5A4217BD18233A0D00A0088E /* SettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingViewController.h; sourceTree = "<group>"; };
+		5A4217BE18233A0D00A0088E /* SettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
+		5A4217C118233A9800A0088E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5A4217C31823691300A0088E /* Setting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Setting.h; sourceTree = "<group>"; };
+		5A4217C41823691300A0088E /* Setting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Setting.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,15 +133,21 @@
 		5A129155181F280800B0D258 /* iFlavor */ = {
 			isa = PBXGroup;
 			children = (
+				5A4217C31823691300A0088E /* Setting.h */,
+				5A4217C41823691300A0088E /* Setting.m */,
 				5A12915E181F280800B0D258 /* AppDelegate.h */,
 				5A12915F181F280800B0D258 /* AppDelegate.m */,
-				5A129161181F280800B0D258 /* Main.storyboard */,
+				5A4217C018233A9800A0088E /* Main.storyboard */,
 				5A129164181F280800B0D258 /* ViewController.h */,
 				5A129165181F280800B0D258 /* ViewController.m */,
 				5A208BBE1820211D0013CB88 /* RegisterViewController.h */,
 				5A208BBF1820211D0013CB88 /* RegisterViewController.m */,
 				5A208BC1182034950013CB88 /* TableViewController.h */,
 				5A208BC2182034950013CB88 /* TableViewController.m */,
+				5A4217BA1822F27C00A0088E /* HomeViewController.h */,
+				5A4217BB1822F27C00A0088E /* HomeViewController.m */,
+				5A4217BD18233A0D00A0088E /* SettingViewController.h */,
+				5A4217BE18233A0D00A0088E /* SettingViewController.m */,
 				5A129167181F280800B0D258 /* Images.xcassets */,
 				5A129156181F280800B0D258 /* Supporting Files */,
 			);
@@ -250,9 +265,9 @@
 				5A129168181F280800B0D258 /* Images.xcassets in Resources */,
 				5A129187181F332800B0D258 /* FlavorFood.plist in Resources */,
 				5A208BBD1820207F0013CB88 /* Flavor.plist in Resources */,
+				5A4217C218233A9800A0088E /* Main.storyboard in Resources */,
 				5A129185181F326800B0D258 /* AreaFood.plist in Resources */,
 				5A12915A181F280800B0D258 /* InfoPlist.strings in Resources */,
-				5A129163181F280800B0D258 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,9 +288,12 @@
 			files = (
 				5A129166181F280800B0D258 /* ViewController.m in Sources */,
 				5A129160181F280800B0D258 /* AppDelegate.m in Sources */,
+				5A4217C51823691300A0088E /* Setting.m in Sources */,
 				5A12915C181F280800B0D258 /* main.m in Sources */,
+				5A4217BF18233A0D00A0088E /* SettingViewController.m in Sources */,
 				5A208BC3182034950013CB88 /* TableViewController.m in Sources */,
 				5A208BC01820211D0013CB88 /* RegisterViewController.m in Sources */,
+				5A4217BC1822F27C00A0088E /* HomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,20 +324,20 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		5A129161181F280800B0D258 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5A129162181F280800B0D258 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		5A129177181F280800B0D258 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
 				5A129178181F280800B0D258 /* en */,
 			);
 			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		5A4217C018233A9800A0088E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5A4217C118233A9800A0088E /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
