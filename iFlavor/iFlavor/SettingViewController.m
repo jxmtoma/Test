@@ -61,28 +61,71 @@
     switch (indexPath.row) {
         case 0: {
             //notification
-            UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
-            if (cell == Nil) {
-                cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"Cell"];
-                UISwitch *uiSwitch = [[UISwitch alloc] initWithFrame:CGRectZero];
-                cell.accessoryView = uiSwitch;
-                [uiSwitch setOn:NO animated:NO];
+            UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+            UISwitch *uiSwitch = [[UISwitch alloc] initWithFrame:CGRectZero];
+            [[cell textLabel] setText:@"Notification"];
+            cell.accessoryView = uiSwitch;
+            [uiSwitch setOn:NO animated:NO];
                         
-            }
+            
             return cell;
         }
             break;
+        case 1: {
+            UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
             
-        default: {
-            UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
-            if (cell == Nil) {
-                cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"Cell"];
-            }
+            [[cell textLabel] setText:@"Rating this app"];
+            return cell;
+            
         }
             break;
+        case 2: {
+            UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+            
+//            cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"Cell"];
+            [[cell textLabel] setText:@"Clear History"];
+            return cell;
+            
+        }
+            break;
+        case 3: {
+            UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+            
+            [[cell textLabel] setText:@"Privacy"];
+            return cell;
+            
+        }
+            break;
+        case 4: {
+            UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+            
+            [[cell textLabel] setText:@"Log Out"];
+            return cell;
+        }
+            break;
+        
     }
     
     return nil;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    if (indexPath.row == 2) {
+        //clear history
+        UIActionSheet *actionSheet = [[UIActionSheet alloc] initWithTitle:@"Clear History" delegate:self cancelButtonTitle:@"Cancel" destructiveButtonTitle:@"Clear" otherButtonTitles:nil];
+        actionSheet.actionSheetStyle = UIActionSheetStyleDefault;
+        [actionSheet showInView:self.view];
+        
+    }
+    if (indexPath.row == 3) {
+        //privacy
+    }
+    if (indexPath.row == 4) {
+        //log out
+        UIActionSheet *actionSheet = [[UIActionSheet alloc] initWithTitle:@"Are you sure to log out" delegate:self cancelButtonTitle:@"Cancel" destructiveButtonTitle:@"Log Out" otherButtonTitles:nil];
+        actionSheet.actionSheetStyle = UIActionSheetStyleDefault;
+        [actionSheet showInView:self.view];
+    }
 }
 
 /*

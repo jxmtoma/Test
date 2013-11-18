@@ -25,10 +25,15 @@
 		5A208BBD1820207F0013CB88 /* Flavor.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5A208BBC1820207F0013CB88 /* Flavor.plist */; };
 		5A208BC01820211D0013CB88 /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A208BBF1820211D0013CB88 /* RegisterViewController.m */; };
 		5A208BC3182034950013CB88 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A208BC2182034950013CB88 /* TableViewController.m */; };
+		5A397AC91839873D001C3454 /* MeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A397AC81839873D001C3454 /* MeViewController.m */; };
+		5A397ACB18398BDC001C3454 /* MeCover.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5A397ACA18398BDC001C3454 /* MeCover.jpg */; };
+		5A397ACE1839A824001C3454 /* MeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A397ACD1839A824001C3454 /* MeCell.m */; };
 		5A4217BC1822F27C00A0088E /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A4217BB1822F27C00A0088E /* HomeViewController.m */; };
 		5A4217BF18233A0D00A0088E /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A4217BE18233A0D00A0088E /* SettingViewController.m */; };
 		5A4217C218233A9800A0088E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A4217C018233A9800A0088E /* Main.storyboard */; };
 		5A4217C51823691300A0088E /* Setting.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A4217C41823691300A0088E /* Setting.m */; };
+		5A7808B91839BA6F00A26176 /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A7808B81839BA6F00A26176 /* SearchViewController.m */; };
+		5A82FAFE1830B7090044525B /* HomeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A82FAFD1830B7090044525B /* HomeCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +72,11 @@
 		5A208BBF1820211D0013CB88 /* RegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = "<group>"; };
 		5A208BC1182034950013CB88 /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
 		5A208BC2182034950013CB88 /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
+		5A397AC71839873D001C3454 /* MeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeViewController.h; sourceTree = "<group>"; };
+		5A397AC81839873D001C3454 /* MeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeViewController.m; sourceTree = "<group>"; };
+		5A397ACA18398BDC001C3454 /* MeCover.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = MeCover.jpg; sourceTree = "<group>"; };
+		5A397ACC1839A824001C3454 /* MeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeCell.h; sourceTree = "<group>"; };
+		5A397ACD1839A824001C3454 /* MeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeCell.m; sourceTree = "<group>"; };
 		5A4217BA1822F27C00A0088E /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		5A4217BB1822F27C00A0088E /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		5A4217BD18233A0D00A0088E /* SettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingViewController.h; sourceTree = "<group>"; };
@@ -74,6 +84,10 @@
 		5A4217C118233A9800A0088E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5A4217C31823691300A0088E /* Setting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Setting.h; sourceTree = "<group>"; };
 		5A4217C41823691300A0088E /* Setting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Setting.m; sourceTree = "<group>"; };
+		5A7808B71839BA6F00A26176 /* SearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchViewController.h; sourceTree = "<group>"; };
+		5A7808B81839BA6F00A26176 /* SearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
+		5A82FAFC1830B7090044525B /* HomeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeCell.h; sourceTree = "<group>"; };
+		5A82FAFD1830B7090044525B /* HomeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,10 +158,18 @@
 				5A208BBF1820211D0013CB88 /* RegisterViewController.m */,
 				5A208BC1182034950013CB88 /* TableViewController.h */,
 				5A208BC2182034950013CB88 /* TableViewController.m */,
+				5A397AC71839873D001C3454 /* MeViewController.h */,
+				5A397AC81839873D001C3454 /* MeViewController.m */,
 				5A4217BA1822F27C00A0088E /* HomeViewController.h */,
 				5A4217BB1822F27C00A0088E /* HomeViewController.m */,
+				5A397ACC1839A824001C3454 /* MeCell.h */,
+				5A397ACD1839A824001C3454 /* MeCell.m */,
+				5A82FAFC1830B7090044525B /* HomeCell.h */,
+				5A82FAFD1830B7090044525B /* HomeCell.m */,
 				5A4217BD18233A0D00A0088E /* SettingViewController.h */,
 				5A4217BE18233A0D00A0088E /* SettingViewController.m */,
+				5A7808B71839BA6F00A26176 /* SearchViewController.h */,
+				5A7808B81839BA6F00A26176 /* SearchViewController.m */,
 				5A129167181F280800B0D258 /* Images.xcassets */,
 				5A129156181F280800B0D258 /* Supporting Files */,
 			);
@@ -158,6 +180,7 @@
 			isa = PBXGroup;
 			children = (
 				5A129157181F280800B0D258 /* iFlavor-Info.plist */,
+				5A397ACA18398BDC001C3454 /* MeCover.jpg */,
 				5A129158181F280800B0D258 /* InfoPlist.strings */,
 				5A12915B181F280800B0D258 /* main.m */,
 				5A12915D181F280800B0D258 /* iFlavor-Prefix.pch */,
@@ -262,6 +285,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A397ACB18398BDC001C3454 /* MeCover.jpg in Resources */,
 				5A129168181F280800B0D258 /* Images.xcassets in Resources */,
 				5A129187181F332800B0D258 /* FlavorFood.plist in Resources */,
 				5A208BBD1820207F0013CB88 /* Flavor.plist in Resources */,
@@ -286,13 +310,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A397ACE1839A824001C3454 /* MeCell.m in Sources */,
 				5A129166181F280800B0D258 /* ViewController.m in Sources */,
 				5A129160181F280800B0D258 /* AppDelegate.m in Sources */,
 				5A4217C51823691300A0088E /* Setting.m in Sources */,
+				5A82FAFE1830B7090044525B /* HomeCell.m in Sources */,
+				5A397AC91839873D001C3454 /* MeViewController.m in Sources */,
 				5A12915C181F280800B0D258 /* main.m in Sources */,
 				5A4217BF18233A0D00A0088E /* SettingViewController.m in Sources */,
 				5A208BC3182034950013CB88 /* TableViewController.m in Sources */,
 				5A208BC01820211D0013CB88 /* RegisterViewController.m in Sources */,
+				5A7808B91839BA6F00A26176 /* SearchViewController.m in Sources */,
 				5A4217BC1822F27C00A0088E /* HomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

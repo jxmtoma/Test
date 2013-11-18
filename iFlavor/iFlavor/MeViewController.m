@@ -1,20 +1,23 @@
 //
-//  HomeViewController.m
+//  MeViewController.m
 //  iFlavor
 //
-//  Created by Toma Ju on 10/31/13.
+//  Created by Toma Ju on 11/17/13.
 //  Copyright (c) 2013 Toma Ju. All rights reserved.
 //
 
-#import "HomeViewController.h"
-#import "HomeCell.h"
+#import "MeViewController.h"
+#import "MeCell.h"
 
-@interface HomeViewController ()
+@interface MeViewController () {
+    UIImage *image;
+    NSArray *meTags;
+}
 
 @end
 
-@implementation HomeViewController
-@synthesize selectedRows, collectionsView;
+@implementation MeViewController
+@synthesize coverImage, meCollectionView;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -29,9 +32,12 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
-    [[self collectionsView] setDataSource:self];
-    [[self collectionsView] setDelegate:self];
+    [[self meCollectionView]setDelegate:self];
+    [[self meCollectionView]setDataSource:self];
     
+    image = [UIImage imageNamed:@"MeCover.jpg"];
+    [coverImage setImage:image];
+    meTags = [[NSArray alloc]initWithObjects:@"flavor",@"visited",@"liked",@"friends",@"reviews",@"messages", nil];
 }
 
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
@@ -39,13 +45,13 @@
 }
 
 -(NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-    return [selectedRows count];
+    return [meTags count];
 }
 
 -(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     NSString *CellIdentifier = @"Cell";
-    HomeCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:CellIdentifier forIndexPath:indexPath];
-    [[cell tagLabel] setText:[selectedRows objectAtIndex:indexPath.item]];
+    MeCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:CellIdentifier forIndexPath:indexPath];
+    [[cell meCellDiscreption] setText:[meTags objectAtIndex:indexPath.item]];
     return cell;
 }
 

@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface HomeViewController : UIViewController
+@interface HomeViewController : UIViewController <UICollectionViewDataSource, UICollectionViewDelegate>
 
 @property (nonatomic, strong) NSArray *selectedRows;
+@property (weak, nonatomic) IBOutlet UICollectionView *collectionsView;
 
 @end
