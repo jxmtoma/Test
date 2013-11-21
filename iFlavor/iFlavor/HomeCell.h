@@ -13,6 +13,7 @@
     float _ranking;
     NSString *_detail;
     NSString *_imageName;
+    
 }
 
 @property NSString *title;

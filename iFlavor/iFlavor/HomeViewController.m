@@ -8,6 +8,7 @@
 
 #import "HomeViewController.h"
 #import "HomeCell.h"
+#import "RestaurantViewController.h"
 
 @interface HomeViewController () {
     HomeCell *layer0;
@@ -29,6 +30,13 @@
         
     }
     return self;
+}
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    RestaurantViewController *rvc = [segue destinationViewController];
+    NSIndexPath *path = [self.homeTableView indexPathForSelectedRow];
+    HomeCell *hc = [totalLayers objectAtIndex:path.row];
+    
 }
 
 -(UIImage*) drawText:(NSString*) text

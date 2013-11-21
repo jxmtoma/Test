@@ -17,7 +17,7 @@
                BlueprintIdentifier = "5A12914B181F280800B0D258"
                BuildableName = "iFlavor.app"
                BlueprintName = "iFlavor"
-               ReferencedContainer = "container:iflavor.xcodeproj">
+               ReferencedContainer = "container:iFlavor.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -35,7 +35,7 @@
                BlueprintIdentifier = "5A12916C181F280800B0D258"
                BuildableName = "iFlavorTests.xctest"
                BlueprintName = "iFlavorTests"
-               ReferencedContainer = "container:iflavor.xcodeproj">
+               ReferencedContainer = "container:iFlavor.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -45,7 +45,7 @@
             BlueprintIdentifier = "5A12914B181F280800B0D258"
             BuildableName = "iFlavor.app"
             BlueprintName = "iFlavor"
-            ReferencedContainer = "container:iflavor.xcodeproj">
+            ReferencedContainer = "container:iFlavor.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -64,7 +64,7 @@
             BlueprintIdentifier = "5A12914B181F280800B0D258"
             BuildableName = "iFlavor.app"
             BlueprintName = "iFlavor"
-            ReferencedContainer = "container:iflavor.xcodeproj">
+            ReferencedContainer = "container:iFlavor.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -82,7 +82,7 @@
             BlueprintIdentifier = "5A12914B181F280800B0D258"
             BuildableName = "iFlavor.app"
             BlueprintName = "iFlavor"
-            ReferencedContainer = "container:iflavor.xcodeproj">
+            ReferencedContainer = "container:iFlavor.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
