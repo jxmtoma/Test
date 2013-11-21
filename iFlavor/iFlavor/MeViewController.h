@@ -7,10 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MeSegmentControl.h"
 
-@interface MeViewController : UIViewController<UICollectionViewDelegate, UICollectionViewDataSource>
+@interface MeViewController : UIViewController<UITableViewDelegate, UITableViewDataSource>
 
 @property (weak, nonatomic) IBOutlet UIImageView *coverImage;
-@property (weak, nonatomic) IBOutlet UICollectionView *meCollectionView;
+@property (weak, nonatomic) IBOutlet UISegmentedControl *meSegmentedControl;
+@property (weak, nonatomic) IBOutlet UITableView *meTableView;
+-(IBAction)segmentDidChange:(id)sender;
 
 @end

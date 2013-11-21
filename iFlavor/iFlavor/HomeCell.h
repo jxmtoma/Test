@@ -8,8 +8,21 @@
 
 #import <UIKit/UIKit.h>
 
-@interface HomeCell : UICollectionViewCell
+@interface HomeCell : NSObject {
+    NSString *_title;
+    float _ranking;
+    NSString *_detail;
+    NSString *_imageName;
+}
 
-@property (weak, nonatomic) IBOutlet UILabel *tagLabel;
+@property NSString *title;
+@property float ranking;
+@property NSString *imageName;
+@property NSString *detail;
+
+- (id)initWithTitle:(NSString *)title
+           ranking:(float)ranking
+             detail:(NSString *)detail
+           imageName:(NSString *)imageName;
 
 @end

@@ -19,6 +19,11 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     [userName resignFirstResponder];
     [password resignFirstResponder];
+    if ([segue.identifier isEqualToString:@"ToTabBar"]) {
+        //NSLog(@"here");
+        UITabBarController *controller = segue.destinationViewController;
+        [controller setSelectedViewController:(UIViewController *)[controller.viewControllers objectAtIndex:2]];
+    }
     //user login check
 }
 

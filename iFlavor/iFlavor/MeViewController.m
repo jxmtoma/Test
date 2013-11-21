@@ -7,7 +7,7 @@
 //
 
 #import "MeViewController.h"
-#import "MeCell.h"
+#import "MeSegmentControl.h"
 
 @interface MeViewController () {
     UIImage *image;
@@ -17,7 +17,7 @@
 @end
 
 @implementation MeViewController
-@synthesize coverImage, meCollectionView;
+@synthesize coverImage, meSegmentedControl;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -28,31 +28,40 @@
     return self;
 }
 
+-(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    return 1;
+}
+
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return 3;
+}
+
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    static NSString *CellIdentifier = @"Cell";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    if (!cell) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+    }
+    [[cell textLabel] setText:[NSString stringWithFormat:@"This is %d", self.meSegmentedControl.selectedSegmentIndex]];
+    return cell;
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
-    [[self meCollectionView]setDelegate:self];
-    [[self meCollectionView]setDataSource:self];
     
     image = [UIImage imageNamed:@"MeCover.jpg"];
     [coverImage setImage:image];
-    meTags = [[NSArray alloc]initWithObjects:@"flavor",@"visited",@"liked",@"friends",@"reviews",@"messages", nil];
+    //meTags = [[NSArray alloc]initWithObjects:@"visit",@"like",@"friend",@"review",@"message", nil];
+    self.meTableView.dataSource = self;
+    [self.meTableView setDelegate:self];
+    
 }
 
-- (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
-    return 1;
-}
-
--(NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-    return [meTags count];
-}
-
--(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
-    NSString *CellIdentifier = @"Cell";
-    MeCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:CellIdentifier forIndexPath:indexPath];
-    [[cell meCellDiscreption] setText:[meTags objectAtIndex:indexPath.item]];
-    return cell;
+- (IBAction)segmentDidChange:(id)sender
+{
+    [self.meTableView reloadData];
 }
 
 - (void)didReceiveMemoryWarning

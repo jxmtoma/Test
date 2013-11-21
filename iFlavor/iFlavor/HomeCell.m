@@ -10,13 +10,22 @@
 
 @implementation HomeCell
 
-@synthesize tagLabel;
+@synthesize title = _title;
+@synthesize ranking = _ranking;
+@synthesize imageName = _imageName;
+@synthesize detail = _detail;
 
-- (id)initWithFrame:(CGRect)frame
+- (id)initWithTitle:(NSString *)title
+            ranking:(float)ranking
+            detail:(NSString *)detail imageName:(NSString *)imageName
 {
-    self = [super initWithFrame:frame];
+    self = [super init];
     if (self) {
         // Initialization code
+        _imageName = imageName;
+        _ranking = ranking;
+        _title = title;
+        _detail = detail;
     }
     return self;
 }

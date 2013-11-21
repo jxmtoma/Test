@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5A10021D183B022200EF907E /* FigueroaPhillyCheese.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5A10021C183B022200EF907E /* FigueroaPhillyCheese.jpg */; };
+		5A1101D5183D8CE100E8D803 /* 1StarSmall.png in Resources */ = {isa = PBXBuildFile; fileRef = 5A1101D0183D8CE100E8D803 /* 1StarSmall.png */; };
+		5A1101D6183D8CE100E8D803 /* 2StarsSmall.png in Resources */ = {isa = PBXBuildFile; fileRef = 5A1101D1183D8CE100E8D803 /* 2StarsSmall.png */; };
+		5A1101D7183D8CE100E8D803 /* 3StarsSmall.png in Resources */ = {isa = PBXBuildFile; fileRef = 5A1101D2183D8CE100E8D803 /* 3StarsSmall.png */; };
+		5A1101D8183D8CE100E8D803 /* 4StarsSmall.png in Resources */ = {isa = PBXBuildFile; fileRef = 5A1101D3183D8CE100E8D803 /* 4StarsSmall.png */; };
+		5A1101D9183D8CE100E8D803 /* 5StarsSmall.png in Resources */ = {isa = PBXBuildFile; fileRef = 5A1101D4183D8CE100E8D803 /* 5StarsSmall.png */; };
 		5A129150181F280800B0D258 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A12914F181F280800B0D258 /* Foundation.framework */; };
 		5A129152181F280800B0D258 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A129151181F280800B0D258 /* CoreGraphics.framework */; };
 		5A129154181F280800B0D258 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A129153181F280800B0D258 /* UIKit.framework */; };
@@ -25,6 +31,7 @@
 		5A208BBD1820207F0013CB88 /* Flavor.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5A208BBC1820207F0013CB88 /* Flavor.plist */; };
 		5A208BC01820211D0013CB88 /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A208BBF1820211D0013CB88 /* RegisterViewController.m */; };
 		5A208BC3182034950013CB88 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A208BC2182034950013CB88 /* TableViewController.m */; };
+		5A2CEC59183CA73600D1B919 /* MeSegmentControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A2CEC58183CA73600D1B919 /* MeSegmentControl.m */; };
 		5A397AC91839873D001C3454 /* MeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A397AC81839873D001C3454 /* MeViewController.m */; };
 		5A397ACB18398BDC001C3454 /* MeCover.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5A397ACA18398BDC001C3454 /* MeCover.jpg */; };
 		5A397ACE1839A824001C3454 /* MeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A397ACD1839A824001C3454 /* MeCell.m */; };
@@ -33,6 +40,8 @@
 		5A4217C218233A9800A0088E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A4217C018233A9800A0088E /* Main.storyboard */; };
 		5A4217C51823691300A0088E /* Setting.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A4217C41823691300A0088E /* Setting.m */; };
 		5A7808B91839BA6F00A26176 /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A7808B81839BA6F00A26176 /* SearchViewController.m */; };
+		5A826D34183C03920073EB9D /* Dino'sChickenandBurgers.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5A826D33183C03920073EB9D /* Dino'sChickenandBurgers.jpg */; };
+		5A826D36183C03E40073EB9D /* SoowonGalbiKBBQRestaurant.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5A826D35183C03E40073EB9D /* SoowonGalbiKBBQRestaurant.jpg */; };
 		5A82FAFE1830B7090044525B /* HomeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A82FAFD1830B7090044525B /* HomeCell.m */; };
 /* End PBXBuildFile section */
 
@@ -47,6 +56,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5A10021C183B022200EF907E /* FigueroaPhillyCheese.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = FigueroaPhillyCheese.jpg; sourceTree = "<group>"; };
+		5A1101D0183D8CE100E8D803 /* 1StarSmall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1StarSmall.png; sourceTree = "<group>"; };
+		5A1101D1183D8CE100E8D803 /* 2StarsSmall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2StarsSmall.png; sourceTree = "<group>"; };
+		5A1101D2183D8CE100E8D803 /* 3StarsSmall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3StarsSmall.png; sourceTree = "<group>"; };
+		5A1101D3183D8CE100E8D803 /* 4StarsSmall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 4StarsSmall.png; sourceTree = "<group>"; };
+		5A1101D4183D8CE100E8D803 /* 5StarsSmall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 5StarsSmall.png; sourceTree = "<group>"; };
 		5A12914C181F280800B0D258 /* iFlavor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iFlavor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A12914F181F280800B0D258 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		5A129151181F280800B0D258 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -72,6 +87,8 @@
 		5A208BBF1820211D0013CB88 /* RegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = "<group>"; };
 		5A208BC1182034950013CB88 /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
 		5A208BC2182034950013CB88 /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
+		5A2CEC57183CA73600D1B919 /* MeSegmentControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeSegmentControl.h; sourceTree = "<group>"; };
+		5A2CEC58183CA73600D1B919 /* MeSegmentControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeSegmentControl.m; sourceTree = "<group>"; };
 		5A397AC71839873D001C3454 /* MeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeViewController.h; sourceTree = "<group>"; };
 		5A397AC81839873D001C3454 /* MeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeViewController.m; sourceTree = "<group>"; };
 		5A397ACA18398BDC001C3454 /* MeCover.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = MeCover.jpg; sourceTree = "<group>"; };
@@ -86,6 +103,8 @@
 		5A4217C41823691300A0088E /* Setting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Setting.m; sourceTree = "<group>"; };
 		5A7808B71839BA6F00A26176 /* SearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchViewController.h; sourceTree = "<group>"; };
 		5A7808B81839BA6F00A26176 /* SearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
+		5A826D33183C03920073EB9D /* Dino'sChickenandBurgers.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Dino'sChickenandBurgers.jpg"; sourceTree = "<group>"; };
+		5A826D35183C03E40073EB9D /* SoowonGalbiKBBQRestaurant.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = SoowonGalbiKBBQRestaurant.jpg; sourceTree = "<group>"; };
 		5A82FAFC1830B7090044525B /* HomeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeCell.h; sourceTree = "<group>"; };
 		5A82FAFD1830B7090044525B /* HomeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -162,6 +181,8 @@
 				5A397AC81839873D001C3454 /* MeViewController.m */,
 				5A4217BA1822F27C00A0088E /* HomeViewController.h */,
 				5A4217BB1822F27C00A0088E /* HomeViewController.m */,
+				5A2CEC57183CA73600D1B919 /* MeSegmentControl.h */,
+				5A2CEC58183CA73600D1B919 /* MeSegmentControl.m */,
 				5A397ACC1839A824001C3454 /* MeCell.h */,
 				5A397ACD1839A824001C3454 /* MeCell.m */,
 				5A82FAFC1830B7090044525B /* HomeCell.h */,
@@ -179,6 +200,14 @@
 		5A129156181F280800B0D258 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				5A1101D0183D8CE100E8D803 /* 1StarSmall.png */,
+				5A1101D1183D8CE100E8D803 /* 2StarsSmall.png */,
+				5A1101D2183D8CE100E8D803 /* 3StarsSmall.png */,
+				5A1101D3183D8CE100E8D803 /* 4StarsSmall.png */,
+				5A1101D4183D8CE100E8D803 /* 5StarsSmall.png */,
+				5A826D35183C03E40073EB9D /* SoowonGalbiKBBQRestaurant.jpg */,
+				5A826D33183C03920073EB9D /* Dino'sChickenandBurgers.jpg */,
+				5A10021C183B022200EF907E /* FigueroaPhillyCheese.jpg */,
 				5A129157181F280800B0D258 /* iFlavor-Info.plist */,
 				5A397ACA18398BDC001C3454 /* MeCover.jpg */,
 				5A129158181F280800B0D258 /* InfoPlist.strings */,
@@ -285,13 +314,21 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A1101D8183D8CE100E8D803 /* 4StarsSmall.png in Resources */,
+				5A10021D183B022200EF907E /* FigueroaPhillyCheese.jpg in Resources */,
 				5A397ACB18398BDC001C3454 /* MeCover.jpg in Resources */,
+				5A1101D6183D8CE100E8D803 /* 2StarsSmall.png in Resources */,
 				5A129168181F280800B0D258 /* Images.xcassets in Resources */,
+				5A1101D9183D8CE100E8D803 /* 5StarsSmall.png in Resources */,
 				5A129187181F332800B0D258 /* FlavorFood.plist in Resources */,
 				5A208BBD1820207F0013CB88 /* Flavor.plist in Resources */,
+				5A1101D7183D8CE100E8D803 /* 3StarsSmall.png in Resources */,
+				5A1101D5183D8CE100E8D803 /* 1StarSmall.png in Resources */,
 				5A4217C218233A9800A0088E /* Main.storyboard in Resources */,
 				5A129185181F326800B0D258 /* AreaFood.plist in Resources */,
 				5A12915A181F280800B0D258 /* InfoPlist.strings in Resources */,
+				5A826D34183C03920073EB9D /* Dino'sChickenandBurgers.jpg in Resources */,
+				5A826D36183C03E40073EB9D /* SoowonGalbiKBBQRestaurant.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,6 +347,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A2CEC59183CA73600D1B919 /* MeSegmentControl.m in Sources */,
 				5A397ACE1839A824001C3454 /* MeCell.m in Sources */,
 				5A129166181F280800B0D258 /* ViewController.m in Sources */,
 				5A129160181F280800B0D258 /* AppDelegate.m in Sources */,

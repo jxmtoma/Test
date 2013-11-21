@@ -8,9 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface HomeViewController : UIViewController <UICollectionViewDataSource, UICollectionViewDelegate>
+@interface HomeViewController : UIViewController<UIScrollViewDelegate, UITableViewDataSource, UITableViewDelegate>
 
 @property (nonatomic, strong) NSArray *selectedRows;
-@property (weak, nonatomic) IBOutlet UICollectionView *collectionsView;
+@property (weak, nonatomic) IBOutlet UIScrollView *homeScrollView;
+@property (weak, nonatomic) IBOutlet UIPageControl *homePageControl;
+@property (weak, nonatomic) IBOutlet UITableView *homeTableView;
 
 @end
