@@ -376,6 +376,7 @@
                         <rect key="frame" x="129" y="330" width="163" height="49"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" red="1" green="0.1368221466" blue="0.32671089949999998" alpha="1" colorSpace="calibratedRGB"/>
                     </tabBar>
                     <connections>
                         <segue destination="0gg-za-vDS" kind="relationship" relationship="viewControllers" id="eZq-aw-QIf"/>
@@ -404,10 +405,14 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="560"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <searchBar key="tableHeaderView" contentMode="redraw" id="BUE-ep-Xu3">
-                                    <rect key="frame" x="0.0" y="64" width="320" height="44"/>
+                                <searchBar key="tableHeaderView" contentMode="redraw" showsScopeBar="YES" id="BUE-ep-Xu3">
+                                    <rect key="frame" x="0.0" y="64" width="320" height="88"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                     <textInputTraits key="textInputTraits"/>
+                                    <scopeButtonTitles>
+                                        <string>Restaurants</string>
+                                        <string>Dishes</string>
+                                    </scopeButtonTitles>
                                     <connections>
                                         <outlet property="delegate" destination="61I-4K-2Pf" id="bDL-Du-sBC"/>
                                     </connections>
@@ -418,6 +423,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Search" id="2Qs-By-HDo"/>
                     <connections>
+                        <outlet property="searchBar" destination="BUE-ep-Xu3" id="QmT-ce-cww"/>
                         <outlet property="searchDisplayController" destination="0qo-PK-HlI" id="0Gf-AZ-X5o"/>
                         <outlet property="searchTable" destination="u58-79-drK" id="7mX-xz-m02"/>
                     </connections>
@@ -512,7 +518,7 @@
         <scene sceneID="BEy-SR-xhf">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="0fx-M0-EzO" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Setting" id="LB1-VC-7GJ"/>
+                    <tabBarItem key="tabBarItem" title="Setting" image="Settings.png" id="LB1-VC-7GJ"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="agm-ZI-YdH">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -569,7 +575,7 @@
         <scene sceneID="jjK-fd-CdK">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="0gg-za-vDS" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Home" id="gfa-qb-N3L"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="news.png" id="gfa-qb-N3L"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="tl6-XK-WHP">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -588,7 +594,7 @@
         <scene sceneID="H2f-sl-pLB">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="RV3-f6-iPd" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Me" id="3MZ-nq-SJj"/>
+                    <tabBarItem key="tabBarItem" title="Me" image="person.png" id="3MZ-nq-SJj"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="bec-Xa-hZw">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -607,7 +613,7 @@
         <scene sceneID="nLy-WZ-cqC">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="lfx-3G-QBq" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Search" id="bR4-1c-iw7"/>
+                    <tabBarItem key="tabBarItem" title="Search" image="searchIcon.png" id="bR4-1c-iw7"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Ue3-mz-fvE">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -656,6 +662,12 @@
             <point key="canvasLocation" x="2974" y="475"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Settings.png" width="26" height="26"/>
+        <image name="news.png" width="27" height="23"/>
+        <image name="person.png" width="27" height="24"/>
+        <image name="searchIcon.png" width="24" height="24"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

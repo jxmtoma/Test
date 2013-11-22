@@ -7,9 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "RestaurantPreviewCell.h"
 
 @interface SearchViewController : UIViewController<UISearchBarDelegate, UISearchDisplayDelegate ,UITableViewDelegate, UITableViewDataSource>
 
-@property (weak, nonatomic) IBOutlet UITableView *searchTable;
+@property (strong, nonatomic) IBOutlet UITableView *searchTable;
+@property (strong, nonatomic) IBOutlet UISearchBar *searchBar;
 
 @end

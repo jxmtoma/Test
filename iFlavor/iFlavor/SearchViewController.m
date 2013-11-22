@@ -10,14 +10,26 @@
 
 @interface SearchViewController () {
     BOOL isFiltered;
-    NSMutableArray *menuArray;
-    NSMutableArray *filterArray;
+    
+    NSMutableArray *restImageArray;
+    NSMutableArray *restNameArray;
+    NSMutableArray *restRatingArray;
+    NSMutableArray *restLocArray;
+    NSMutableArray *restDisArray;
+    
+    NSMutableArray *dishExpArray;
+    NSMutableArray *dishImageArray;
+    NSMutableArray *dishNameArray;
+    NSMutableArray *dishRatingArray;
+    NSMutableArray *dishRestArray;
+    
 }
 
 @end
 
 @implementation SearchViewController
-@synthesize searchTable;
+
+@synthesize searchTable, searchBar;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -35,8 +47,69 @@
     //[self.searchDisplayController setDisplaysSearchBarInNavigationBar:YES];
     self.searchTable.dataSource = self;
     self.searchTable.delegate = self;
-    menuArray = [[NSMutableArray alloc]initWithObjects:@"What is hot!",@"recent search",@"what is nearby", nil];
     
+    NSString *imagefile = [[NSBundle mainBundle] pathForResource:@"Dino's Chicken and Burgers Restaurant" ofType:@"jpg"];
+	UIImage *image = [[UIImage alloc] initWithContentsOfFile:imagefile];
+    restImageArray = [[NSMutableArray alloc] init];
+    [restImageArray addObject:image];
+    imagefile = [[NSBundle mainBundle] pathForResource:@"Figueroa Philly Cheese Steak Restaurant" ofType:@"jpg"];
+	image = [[UIImage alloc] initWithContentsOfFile:imagefile];
+    [restImageArray addObject:image];
+    imagefile = [[NSBundle mainBundle] pathForResource:@"Soowon Galbi KBBQ Restaurant" ofType:@"jpg"];
+	image = [[UIImage alloc] initWithContentsOfFile:imagefile];
+    [restImageArray addObject:image];
+    
+    restNameArray = [[NSMutableArray alloc] init];
+    [restNameArray addObject:@"Dino's Chicken and Burgers"];
+    [restNameArray addObject:@"Figueroa Philly Cheese Steak"];
+    [restNameArray addObject:@"Soowon Galbi KBBQ"];
+    
+    restRatingArray = [[NSMutableArray alloc] init];
+    [restRatingArray addObject:[NSNumber numberWithFloat:4]];
+    [restRatingArray addObject:[NSNumber numberWithFloat:3]];
+    [restRatingArray addObject:[NSNumber numberWithFloat:5]];
+    
+    restLocArray = [[NSMutableArray alloc] init];
+    [restLocArray addObject:@"2575 W Pico Blvd"];
+    [restLocArray addObject:@"3844 S Figueroa St"];
+    [restLocArray addObject:@"856 S Vermont Ave"];
+    
+    restDisArray = [[NSMutableArray alloc] init];
+    [restDisArray addObject:@"0.6m"];
+    [restDisArray addObject:@"1.1m"];
+    [restDisArray addObject:@"1.5m"];
+    
+    dishExpArray = [[NSMutableArray alloc] init];
+    [dishExpArray addObject:@"$$"];
+    [dishExpArray addObject:@"$"];
+    [dishExpArray addObject:@"$$$"];
+    
+    
+    imagefile = [[NSBundle mainBundle] pathForResource:@"Carne Asada Fries" ofType:@"jpg"];
+	image = [[UIImage alloc] initWithContentsOfFile:imagefile];
+    dishImageArray = [[NSMutableArray alloc] init];
+    [dishImageArray addObject:image];
+    imagefile = [[NSBundle mainBundle] pathForResource:@"Figueroa Philly Cheese Steak" ofType:@"jpg"];
+	image = [[UIImage alloc] initWithContentsOfFile:imagefile];
+    [dishImageArray addObject:image];
+    imagefile = [[NSBundle mainBundle] pathForResource:@"Grilled Shrimp" ofType:@"jpg"];
+	image = [[UIImage alloc] initWithContentsOfFile:imagefile];
+    [dishImageArray addObject:image];
+    
+    dishNameArray = [[NSMutableArray alloc] init];
+    [dishNameArray addObject:@"Carne Asada Fries"];
+    [dishNameArray addObject:@"Figueroa Philly Cheese Steak"];
+    [dishNameArray addObject:@"Grilled Shrimp"];
+    
+    dishRatingArray = [[NSMutableArray alloc] init];
+    [dishRatingArray addObject:[NSNumber numberWithFloat:5]];
+    [dishRatingArray addObject:[NSNumber numberWithFloat:3]];
+    [dishRatingArray addObject:[NSNumber numberWithFloat:4]];
+    
+    dishRestArray = [[NSMutableArray alloc] init];
+    [dishRestArray addObject:@"Dino's Chicken and Burgers Restaurant"];
+    [dishRestArray addObject:@"Figueroa Philly Cheese Steak Restaurant"];
+    [dishRestArray addObject:@"Soowon Galbi KBBQ Restaurant"];
 }
 
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
@@ -46,35 +119,83 @@
 -(void)searchBar:(UISearchBar *)searchBar textDidChange:(NSString *)searchText {
     if (searchText.length == 0) {
         isFiltered = NO;
+        //searchTable.hidden = YES;
     }
     else {
         isFiltered = YES;
-        filterArray = [[NSMutableArray alloc]init];
         //search prediction...
-        
     }
 }
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    if (isFiltered) {
-        return 6;
-    }
-    return [menuArray count];
+    return 3;
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     NSString *cellIdentifier = @"Cell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
+    RestaurantPreviewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
+    
     if (!cell) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
+        cell = [[RestaurantPreviewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
     }
+    
     if (!isFiltered) {
-        cell.textLabel.text = [menuArray objectAtIndex:indexPath.row];
+        cell.titleLabel.hidden = YES;
+        cell.rating.hidden = YES;
+        cell.subtitleLabel.hidden = YES;
+        cell.distance.hidden = YES;
+        //cell.expense.hidden = YES;
+        return cell;
     }
-    else {
-        cell.textLabel.text = [NSString stringWithFormat:@"Search Result Section %d Row %d",indexPath.section,indexPath.row];
+    
+    if(searchBar.selectedScopeButtonIndex == 0) {
+        cell.titleLabel.text = [restNameArray objectAtIndex:indexPath.row];
+        cell.subtitleLabel.text = [restLocArray objectAtIndex:indexPath.row];
+        cell.distance.text = [restDisArray objectAtIndex:indexPath.row];
+        //cell.expense.text = [restExpArray objectAtIndex:indexPath.row];
+        //cell.expense.hidden = YES;
+        
+        NSNumber *arating = [restRatingArray objectAtIndex:indexPath.row];
+        NSMutableString *ratingString = [[NSMutableString alloc] init];
+        const char starFill[4] = {0xE2, 0x98, 0x85, 0x00};
+        const char starEmpty[4] = {0xE2, 0x98, 0x86, 0x00};
+        for (int i = 0; i < 5; i++) {
+            if ([arating floatValue] > (float)i) {
+                [ratingString appendString:[NSString stringWithUTF8String:starFill]];
+            } else {
+                [ratingString appendString:[NSString stringWithUTF8String:starEmpty]];
+            }
+        }
+        cell.rating.text = [NSString stringWithString:ratingString];
+        cell.imageLabel.image = [restImageArray objectAtIndex:indexPath.row];
     }
+    
+    if(searchBar.selectedScopeButtonIndex == 1) {
+        cell.titleLabel.text = [dishNameArray objectAtIndex:indexPath.row];
+        NSNumber *arating = [dishRatingArray objectAtIndex:indexPath.row];
+        NSMutableString *ratingString = [[NSMutableString alloc] init];
+        const char starFill[4] = {0xE2, 0x98, 0x85, 0x00};
+        const char starEmpty[4] = {0xE2, 0x98, 0x86, 0x00};
+        for (int i = 0; i < 5; i++) {
+            if ([arating floatValue] > (float)i) {
+                [ratingString appendString:[NSString stringWithUTF8String:starFill]];
+            } else {
+                [ratingString appendString:[NSString stringWithUTF8String:starEmpty]];
+            }
+        }
+        cell.rating.text = [NSString stringWithString:ratingString];
+        cell.subtitleLabel.text = [dishRestArray objectAtIndex:indexPath.row];
+        //cell.distance.hidden = YES;
+        cell.distance.text = [dishExpArray objectAtIndex:indexPath.row];
+        cell.imageLabel.image = [dishImageArray objectAtIndex:indexPath.row];
+    }
+    
+    cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     return cell;
+}
+
+-(CGFloat) tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return 70;
 }
 
 - (void)didReceiveMemoryWarning

@@ -7,6 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		15A7C17C183EE0CD00E72C7B /* news@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 15A7C178183EE0CD00E72C7B /* news@2x.png */; };
+		15A7C17D183EE0CD00E72C7B /* person@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 15A7C179183EE0CD00E72C7B /* person@2x.png */; };
+		15A7C17E183EE0CD00E72C7B /* searchIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 15A7C17A183EE0CD00E72C7B /* searchIcon@2x.png */; };
+		15A7C17F183EE0CD00E72C7B /* Settings@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 15A7C17B183EE0CD00E72C7B /* Settings@2x.png */; };
+		15A7C183183EE17A00E72C7B /* RestaurantPreviewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15A7C181183EE17A00E72C7B /* RestaurantPreviewCell.xib */; };
+		15A7C184183EE17A00E72C7B /* RestaurantPreviewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 15A7C182183EE17A00E72C7B /* RestaurantPreviewCell.m */; };
+		15A7C197183EE42C00E72C7B /* Carne Asada Fries.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15A7C191183EE42C00E72C7B /* Carne Asada Fries.jpg */; };
+		15A7C198183EE42C00E72C7B /* Dino's Chicken and Burgers Restaurant.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15A7C192183EE42C00E72C7B /* Dino's Chicken and Burgers Restaurant.jpg */; };
+		15A7C199183EE42C00E72C7B /* Dino's Chicken and Burgers.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15A7C193183EE42C00E72C7B /* Dino's Chicken and Burgers.jpg */; };
+		15A7C19A183EE42C00E72C7B /* Figueroa Philly Cheese Steak Restaurant.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15A7C194183EE42C00E72C7B /* Figueroa Philly Cheese Steak Restaurant.jpg */; };
+		15A7C19B183EE42C00E72C7B /* Figueroa Philly Cheese Steak.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15A7C195183EE42C00E72C7B /* Figueroa Philly Cheese Steak.jpg */; };
+		15A7C19C183EE42C00E72C7B /* Grilled Shrimp.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15A7C196183EE42C00E72C7B /* Grilled Shrimp.jpg */; };
+		15A7C19E183EE49900E72C7B /* Soowon Galbi KBBQ Restaurant.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15A7C19D183EE49900E72C7B /* Soowon Galbi KBBQ Restaurant.jpg */; };
 		5A10021D183B022200EF907E /* FigueroaPhillyCheese.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5A10021C183B022200EF907E /* FigueroaPhillyCheese.jpg */; };
 		5A1101D5183D8CE100E8D803 /* 1StarSmall.png in Resources */ = {isa = PBXBuildFile; fileRef = 5A1101D0183D8CE100E8D803 /* 1StarSmall.png */; };
 		5A1101D6183D8CE100E8D803 /* 2StarsSmall.png in Resources */ = {isa = PBXBuildFile; fileRef = 5A1101D1183D8CE100E8D803 /* 2StarsSmall.png */; };
@@ -59,6 +72,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		15A7C178183EE0CD00E72C7B /* news@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "news@2x.png"; sourceTree = "<group>"; };
+		15A7C179183EE0CD00E72C7B /* person@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "person@2x.png"; sourceTree = "<group>"; };
+		15A7C17A183EE0CD00E72C7B /* searchIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "searchIcon@2x.png"; sourceTree = "<group>"; };
+		15A7C17B183EE0CD00E72C7B /* Settings@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Settings@2x.png"; sourceTree = "<group>"; };
+		15A7C180183EE17A00E72C7B /* RestaurantPreviewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RestaurantPreviewCell.h; sourceTree = "<group>"; };
+		15A7C181183EE17A00E72C7B /* RestaurantPreviewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RestaurantPreviewCell.xib; sourceTree = "<group>"; };
+		15A7C182183EE17A00E72C7B /* RestaurantPreviewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RestaurantPreviewCell.m; sourceTree = "<group>"; };
+		15A7C191183EE42C00E72C7B /* Carne Asada Fries.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Carne Asada Fries.jpg"; sourceTree = "<group>"; };
+		15A7C192183EE42C00E72C7B /* Dino's Chicken and Burgers Restaurant.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Dino's Chicken and Burgers Restaurant.jpg"; sourceTree = "<group>"; };
+		15A7C193183EE42C00E72C7B /* Dino's Chicken and Burgers.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Dino's Chicken and Burgers.jpg"; sourceTree = "<group>"; };
+		15A7C194183EE42C00E72C7B /* Figueroa Philly Cheese Steak Restaurant.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Figueroa Philly Cheese Steak Restaurant.jpg"; sourceTree = "<group>"; };
+		15A7C195183EE42C00E72C7B /* Figueroa Philly Cheese Steak.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Figueroa Philly Cheese Steak.jpg"; sourceTree = "<group>"; };
+		15A7C196183EE42C00E72C7B /* Grilled Shrimp.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Grilled Shrimp.jpg"; sourceTree = "<group>"; };
+		15A7C19D183EE49900E72C7B /* Soowon Galbi KBBQ Restaurant.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Soowon Galbi KBBQ Restaurant.jpg"; sourceTree = "<group>"; };
 		5A10021C183B022200EF907E /* FigueroaPhillyCheese.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = FigueroaPhillyCheese.jpg; sourceTree = "<group>"; };
 		5A1101D0183D8CE100E8D803 /* 1StarSmall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1StarSmall.png; sourceTree = "<group>"; };
 		5A1101D1183D8CE100E8D803 /* 2StarsSmall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2StarsSmall.png; sourceTree = "<group>"; };
@@ -206,6 +233,9 @@
 				5A4217BE18233A0D00A0088E /* SettingViewController.m */,
 				5A7808B71839BA6F00A26176 /* SearchViewController.h */,
 				5A7808B81839BA6F00A26176 /* SearchViewController.m */,
+				15A7C180183EE17A00E72C7B /* RestaurantPreviewCell.h */,
+				15A7C182183EE17A00E72C7B /* RestaurantPreviewCell.m */,
+				15A7C181183EE17A00E72C7B /* RestaurantPreviewCell.xib */,
 				5A129167181F280800B0D258 /* Images.xcassets */,
 				5A129156181F280800B0D258 /* Supporting Files */,
 			);
@@ -217,6 +247,17 @@
 			children = (
 				5A1101D0183D8CE100E8D803 /* 1StarSmall.png */,
 				5A1101D1183D8CE100E8D803 /* 2StarsSmall.png */,
+				15A7C191183EE42C00E72C7B /* Carne Asada Fries.jpg */,
+				15A7C192183EE42C00E72C7B /* Dino's Chicken and Burgers Restaurant.jpg */,
+				15A7C193183EE42C00E72C7B /* Dino's Chicken and Burgers.jpg */,
+				15A7C194183EE42C00E72C7B /* Figueroa Philly Cheese Steak Restaurant.jpg */,
+				15A7C195183EE42C00E72C7B /* Figueroa Philly Cheese Steak.jpg */,
+				15A7C196183EE42C00E72C7B /* Grilled Shrimp.jpg */,
+				15A7C178183EE0CD00E72C7B /* news@2x.png */,
+				15A7C179183EE0CD00E72C7B /* person@2x.png */,
+				15A7C17A183EE0CD00E72C7B /* searchIcon@2x.png */,
+				15A7C17B183EE0CD00E72C7B /* Settings@2x.png */,
+				15A7C19D183EE49900E72C7B /* Soowon Galbi KBBQ Restaurant.jpg */,
 				5A1101D2183D8CE100E8D803 /* 3StarsSmall.png */,
 				5A1101D3183D8CE100E8D803 /* 4StarsSmall.png */,
 				5A1101D4183D8CE100E8D803 /* 5StarsSmall.png */,
@@ -332,17 +373,29 @@
 				5A1101D8183D8CE100E8D803 /* 4StarsSmall.png in Resources */,
 				5A10021D183B022200EF907E /* FigueroaPhillyCheese.jpg in Resources */,
 				5A397ACB18398BDC001C3454 /* MeCover.jpg in Resources */,
+				15A7C199183EE42C00E72C7B /* Dino's Chicken and Burgers.jpg in Resources */,
+				15A7C17E183EE0CD00E72C7B /* searchIcon@2x.png in Resources */,
 				5A1101D6183D8CE100E8D803 /* 2StarsSmall.png in Resources */,
+				15A7C183183EE17A00E72C7B /* RestaurantPreviewCell.xib in Resources */,
+				15A7C19B183EE42C00E72C7B /* Figueroa Philly Cheese Steak.jpg in Resources */,
+				15A7C19E183EE49900E72C7B /* Soowon Galbi KBBQ Restaurant.jpg in Resources */,
 				5A129168181F280800B0D258 /* Images.xcassets in Resources */,
+				15A7C17C183EE0CD00E72C7B /* news@2x.png in Resources */,
 				5A1101D9183D8CE100E8D803 /* 5StarsSmall.png in Resources */,
 				5A129187181F332800B0D258 /* FlavorFood.plist in Resources */,
+				15A7C197183EE42C00E72C7B /* Carne Asada Fries.jpg in Resources */,
+				15A7C19A183EE42C00E72C7B /* Figueroa Philly Cheese Steak Restaurant.jpg in Resources */,
 				5A208BBD1820207F0013CB88 /* Flavor.plist in Resources */,
+				15A7C17D183EE0CD00E72C7B /* person@2x.png in Resources */,
 				5A1101D7183D8CE100E8D803 /* 3StarsSmall.png in Resources */,
 				5A1101D5183D8CE100E8D803 /* 1StarSmall.png in Resources */,
 				5A4217C218233A9800A0088E /* Main.storyboard in Resources */,
 				5A129185181F326800B0D258 /* AreaFood.plist in Resources */,
 				5A12915A181F280800B0D258 /* InfoPlist.strings in Resources */,
+				15A7C19C183EE42C00E72C7B /* Grilled Shrimp.jpg in Resources */,
 				5A826D34183C03920073EB9D /* Dino'sChickenandBurgers.jpg in Resources */,
+				15A7C198183EE42C00E72C7B /* Dino's Chicken and Burgers Restaurant.jpg in Resources */,
+				15A7C17F183EE0CD00E72C7B /* Settings@2x.png in Resources */,
 				5A826D36183C03E40073EB9D /* SoowonGalbiKBBQRestaurant.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -366,6 +419,7 @@
 				5AEA8C01183EDA44009455ED /* myAnnotation.m in Sources */,
 				5A397ACE1839A824001C3454 /* MeCell.m in Sources */,
 				5A129166181F280800B0D258 /* ViewController.m in Sources */,
+				15A7C184183EE17A00E72C7B /* RestaurantPreviewCell.m in Sources */,
 				5A129160181F280800B0D258 /* AppDelegate.m in Sources */,
 				5A4217C51823691300A0088E /* Setting.m in Sources */,
 				5A82FAFE1830B7090044525B /* HomeCell.m in Sources */,
