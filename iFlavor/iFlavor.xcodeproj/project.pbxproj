@@ -7,35 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0C868A37183E3DC000D54896 /* RestaurantViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C868A36183E3DC000D54896 /* RestaurantViewController.m */; };
-		0C868A55183E3ED300D54896 /* d1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0C868A3A183E3ED300D54896 /* d1.jpg */; };
-		0C868A56183E3ED300D54896 /* d2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0C868A3B183E3ED300D54896 /* d2.jpg */; };
-		0C868A57183E3ED300D54896 /* d3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0C868A3C183E3ED300D54896 /* d3.jpg */; };
-		0C868A58183E3ED300D54896 /* d4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0C868A3D183E3ED300D54896 /* d4.jpg */; };
-		0C868A59183E3ED300D54896 /* d5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0C868A3E183E3ED300D54896 /* d5.jpg */; };
-		0C868A5A183E3ED300D54896 /* d6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0C868A3F183E3ED300D54896 /* d6.jpg */; };
-		0C868A5B183E3ED300D54896 /* d7.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0C868A40183E3ED300D54896 /* d7.jpg */; };
-		0C868A5C183E3ED300D54896 /* Dino's Chicken and Burgers.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0C868A41183E3ED300D54896 /* Dino's Chicken and Burgers.txt */; };
-		0C868A5D183E3ED300D54896 /* f1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0C868A43183E3ED300D54896 /* f1.jpg */; };
-		0C868A5E183E3ED300D54896 /* f2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0C868A44183E3ED300D54896 /* f2.jpg */; };
-		0C868A5F183E3ED300D54896 /* f3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0C868A45183E3ED300D54896 /* f3.jpg */; };
-		0C868A60183E3ED300D54896 /* f4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0C868A46183E3ED300D54896 /* f4.jpg */; };
-		0C868A61183E3ED300D54896 /* f5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0C868A47183E3ED300D54896 /* f5.jpg */; };
-		0C868A62183E3ED300D54896 /* Figueroa Philly Cheese.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0C868A48183E3ED300D54896 /* Figueroa Philly Cheese.txt */; };
-		0C868A63183E3ED300D54896 /* ms.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0C868A49183E3ED300D54896 /* ms.jpg */; };
-		0C868A64183E3ED300D54896 /* 傲游截图20131118164549.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C868A4A183E3ED300D54896 /* 傲游截图20131118164549.png */; };
-		0C868A65183E3ED300D54896 /* 傲游截图20131118164613.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C868A4B183E3ED300D54896 /* 傲游截图20131118164613.png */; };
-		0C868A66183E3ED300D54896 /* 傲游截图20131118164628.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C868A4C183E3ED300D54896 /* 傲游截图20131118164628.png */; };
-		0C868A67183E3ED300D54896 /* 傲游截图20131118164702.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C868A4D183E3ED300D54896 /* 傲游截图20131118164702.png */; };
-		0C868A68183E3ED300D54896 /* s1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0C868A4F183E3ED300D54896 /* s1.jpg */; };
-		0C868A69183E3ED300D54896 /* s2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0C868A50183E3ED300D54896 /* s2.jpg */; };
-		0C868A6A183E3ED300D54896 /* s3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0C868A51183E3ED300D54896 /* s3.jpg */; };
-		0C868A6B183E3ED300D54896 /* s4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0C868A52183E3ED300D54896 /* s4.jpg */; };
-		0C868A6C183E3ED300D54896 /* s5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0C868A53183E3ED300D54896 /* s5.jpg */; };
-		0C868A6D183E3ED300D54896 /* Soowon Galbi KBBQ Restaurant.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0C868A54183E3ED300D54896 /* Soowon Galbi KBBQ Restaurant.txt */; };
-		0C868A6F183E401500D54896 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C868A6E183E401500D54896 /* MapKit.framework */; };
-		0C868A72183E40ED00D54896 /* myAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C868A71183E40ED00D54896 /* myAnnotation.m */; };
-		0C868A75183E460000D54896 /* dishesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C868A74183E460000D54896 /* dishesViewController.m */; };
 		5A10021D183B022200EF907E /* FigueroaPhillyCheese.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5A10021C183B022200EF907E /* FigueroaPhillyCheese.jpg */; };
 		5A1101D5183D8CE100E8D803 /* 1StarSmall.png in Resources */ = {isa = PBXBuildFile; fileRef = 5A1101D0183D8CE100E8D803 /* 1StarSmall.png */; };
 		5A1101D6183D8CE100E8D803 /* 2StarsSmall.png in Resources */ = {isa = PBXBuildFile; fileRef = 5A1101D1183D8CE100E8D803 /* 2StarsSmall.png */; };
@@ -72,6 +43,9 @@
 		5A826D34183C03920073EB9D /* Dino'sChickenandBurgers.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5A826D33183C03920073EB9D /* Dino'sChickenandBurgers.jpg */; };
 		5A826D36183C03E40073EB9D /* SoowonGalbiKBBQRestaurant.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5A826D35183C03E40073EB9D /* SoowonGalbiKBBQRestaurant.jpg */; };
 		5A82FAFE1830B7090044525B /* HomeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A82FAFD1830B7090044525B /* HomeCell.m */; };
+		5AEA8BFC183EDA35009455ED /* dishesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AEA8BFB183EDA35009455ED /* dishesViewController.m */; };
+		5AEA8C01183EDA44009455ED /* myAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AEA8BFE183EDA44009455ED /* myAnnotation.m */; };
+		5AEA8C02183EDA44009455ED /* RestaurantViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AEA8C00183EDA44009455ED /* RestaurantViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,38 +59,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0C868A35183E3DC000D54896 /* RestaurantViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RestaurantViewController.h; sourceTree = "<group>"; };
-		0C868A36183E3DC000D54896 /* RestaurantViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RestaurantViewController.m; sourceTree = "<group>"; };
-		0C868A3A183E3ED300D54896 /* d1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = d1.jpg; sourceTree = "<group>"; };
-		0C868A3B183E3ED300D54896 /* d2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = d2.jpg; sourceTree = "<group>"; };
-		0C868A3C183E3ED300D54896 /* d3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = d3.jpg; sourceTree = "<group>"; };
-		0C868A3D183E3ED300D54896 /* d4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = d4.jpg; sourceTree = "<group>"; };
-		0C868A3E183E3ED300D54896 /* d5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = d5.jpg; sourceTree = "<group>"; };
-		0C868A3F183E3ED300D54896 /* d6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = d6.jpg; sourceTree = "<group>"; };
-		0C868A40183E3ED300D54896 /* d7.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = d7.jpg; sourceTree = "<group>"; };
-		0C868A41183E3ED300D54896 /* Dino's Chicken and Burgers.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Dino's Chicken and Burgers.txt"; sourceTree = "<group>"; };
-		0C868A43183E3ED300D54896 /* f1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = f1.jpg; sourceTree = "<group>"; };
-		0C868A44183E3ED300D54896 /* f2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = f2.jpg; sourceTree = "<group>"; };
-		0C868A45183E3ED300D54896 /* f3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = f3.jpg; sourceTree = "<group>"; };
-		0C868A46183E3ED300D54896 /* f4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = f4.jpg; sourceTree = "<group>"; };
-		0C868A47183E3ED300D54896 /* f5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = f5.jpg; sourceTree = "<group>"; };
-		0C868A48183E3ED300D54896 /* Figueroa Philly Cheese.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Figueroa Philly Cheese.txt"; sourceTree = "<group>"; };
-		0C868A49183E3ED300D54896 /* ms.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ms.jpg; sourceTree = "<group>"; };
-		0C868A4A183E3ED300D54896 /* 傲游截图20131118164549.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "傲游截图20131118164549.png"; sourceTree = "<group>"; };
-		0C868A4B183E3ED300D54896 /* 傲游截图20131118164613.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "傲游截图20131118164613.png"; sourceTree = "<group>"; };
-		0C868A4C183E3ED300D54896 /* 傲游截图20131118164628.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "傲游截图20131118164628.png"; sourceTree = "<group>"; };
-		0C868A4D183E3ED300D54896 /* 傲游截图20131118164702.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "傲游截图20131118164702.png"; sourceTree = "<group>"; };
-		0C868A4F183E3ED300D54896 /* s1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = s1.jpg; sourceTree = "<group>"; };
-		0C868A50183E3ED300D54896 /* s2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = s2.jpg; sourceTree = "<group>"; };
-		0C868A51183E3ED300D54896 /* s3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = s3.jpg; sourceTree = "<group>"; };
-		0C868A52183E3ED300D54896 /* s4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = s4.jpg; sourceTree = "<group>"; };
-		0C868A53183E3ED300D54896 /* s5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = s5.jpg; sourceTree = "<group>"; };
-		0C868A54183E3ED300D54896 /* Soowon Galbi KBBQ Restaurant.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Soowon Galbi KBBQ Restaurant.txt"; sourceTree = "<group>"; };
-		0C868A6E183E401500D54896 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
-		0C868A70183E40ED00D54896 /* myAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = myAnnotation.h; sourceTree = "<group>"; };
-		0C868A71183E40ED00D54896 /* myAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = myAnnotation.m; sourceTree = "<group>"; };
-		0C868A73183E460000D54896 /* dishesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dishesViewController.h; sourceTree = "<group>"; };
-		0C868A74183E460000D54896 /* dishesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = dishesViewController.m; sourceTree = "<group>"; };
 		5A10021C183B022200EF907E /* FigueroaPhillyCheese.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = FigueroaPhillyCheese.jpg; sourceTree = "<group>"; };
 		5A1101D0183D8CE100E8D803 /* 1StarSmall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1StarSmall.png; sourceTree = "<group>"; };
 		5A1101D1183D8CE100E8D803 /* 2StarsSmall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2StarsSmall.png; sourceTree = "<group>"; };
@@ -168,6 +110,12 @@
 		5A826D35183C03E40073EB9D /* SoowonGalbiKBBQRestaurant.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = SoowonGalbiKBBQRestaurant.jpg; sourceTree = "<group>"; };
 		5A82FAFC1830B7090044525B /* HomeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeCell.h; sourceTree = "<group>"; };
 		5A82FAFD1830B7090044525B /* HomeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeCell.m; sourceTree = "<group>"; };
+		5AEA8BFA183EDA35009455ED /* dishesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dishesViewController.h; sourceTree = "<group>"; };
+		5AEA8BFB183EDA35009455ED /* dishesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = dishesViewController.m; sourceTree = "<group>"; };
+		5AEA8BFD183EDA44009455ED /* myAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = myAnnotation.h; sourceTree = "<group>"; };
+		5AEA8BFE183EDA44009455ED /* myAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = myAnnotation.m; sourceTree = "<group>"; };
+		5AEA8BFF183EDA44009455ED /* RestaurantViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RestaurantViewController.h; sourceTree = "<group>"; };
+		5AEA8C00183EDA44009455ED /* RestaurantViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RestaurantViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,7 +123,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0C868A6F183E401500D54896 /* MapKit.framework in Frameworks */,
 				5A129152181F280800B0D258 /* CoreGraphics.framework in Frameworks */,
 				5A129154181F280800B0D258 /* UIKit.framework in Frameworks */,
 				5A129150181F280800B0D258 /* Foundation.framework in Frameworks */,
@@ -195,62 +142,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0C868A38183E3ED300D54896 /* 588 */ = {
-			isa = PBXGroup;
-			children = (
-				0C868A39183E3ED300D54896 /* Dino's Chicken and Burgers */,
-				0C868A42183E3ED300D54896 /* Figueroa Philly Cheese Steak */,
-				0C868A4E183E3ED300D54896 /* Soowon Galbi KBBQ Restaurant */,
-			);
-			path = 588;
-			sourceTree = "<group>";
-		};
-		0C868A39183E3ED300D54896 /* Dino's Chicken and Burgers */ = {
-			isa = PBXGroup;
-			children = (
-				0C868A3A183E3ED300D54896 /* d1.jpg */,
-				0C868A3B183E3ED300D54896 /* d2.jpg */,
-				0C868A3C183E3ED300D54896 /* d3.jpg */,
-				0C868A3D183E3ED300D54896 /* d4.jpg */,
-				0C868A3E183E3ED300D54896 /* d5.jpg */,
-				0C868A3F183E3ED300D54896 /* d6.jpg */,
-				0C868A40183E3ED300D54896 /* d7.jpg */,
-				0C868A41183E3ED300D54896 /* Dino's Chicken and Burgers.txt */,
-			);
-			path = "Dino's Chicken and Burgers";
-			sourceTree = "<group>";
-		};
-		0C868A42183E3ED300D54896 /* Figueroa Philly Cheese Steak */ = {
-			isa = PBXGroup;
-			children = (
-				0C868A43183E3ED300D54896 /* f1.jpg */,
-				0C868A44183E3ED300D54896 /* f2.jpg */,
-				0C868A45183E3ED300D54896 /* f3.jpg */,
-				0C868A46183E3ED300D54896 /* f4.jpg */,
-				0C868A47183E3ED300D54896 /* f5.jpg */,
-				0C868A48183E3ED300D54896 /* Figueroa Philly Cheese.txt */,
-				0C868A49183E3ED300D54896 /* ms.jpg */,
-				0C868A4A183E3ED300D54896 /* 傲游截图20131118164549.png */,
-				0C868A4B183E3ED300D54896 /* 傲游截图20131118164613.png */,
-				0C868A4C183E3ED300D54896 /* 傲游截图20131118164628.png */,
-				0C868A4D183E3ED300D54896 /* 傲游截图20131118164702.png */,
-			);
-			path = "Figueroa Philly Cheese Steak";
-			sourceTree = "<group>";
-		};
-		0C868A4E183E3ED300D54896 /* Soowon Galbi KBBQ Restaurant */ = {
-			isa = PBXGroup;
-			children = (
-				0C868A4F183E3ED300D54896 /* s1.jpg */,
-				0C868A50183E3ED300D54896 /* s2.jpg */,
-				0C868A51183E3ED300D54896 /* s3.jpg */,
-				0C868A52183E3ED300D54896 /* s4.jpg */,
-				0C868A53183E3ED300D54896 /* s5.jpg */,
-				0C868A54183E3ED300D54896 /* Soowon Galbi KBBQ Restaurant.txt */,
-			);
-			path = "Soowon Galbi KBBQ Restaurant";
-			sourceTree = "<group>";
-		};
 		5A129143181F280700B0D258 = {
 			isa = PBXGroup;
 			children = (
@@ -273,7 +164,6 @@
 		5A12914E181F280800B0D258 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				0C868A6E183E401500D54896 /* MapKit.framework */,
 				5A12914F181F280800B0D258 /* Foundation.framework */,
 				5A129151181F280800B0D258 /* CoreGraphics.framework */,
 				5A129153181F280800B0D258 /* UIKit.framework */,
@@ -285,17 +175,17 @@
 		5A129155181F280800B0D258 /* iFlavor */ = {
 			isa = PBXGroup;
 			children = (
+				5AEA8BFD183EDA44009455ED /* myAnnotation.h */,
+				5AEA8BFE183EDA44009455ED /* myAnnotation.m */,
+				5AEA8BFF183EDA44009455ED /* RestaurantViewController.h */,
+				5AEA8C00183EDA44009455ED /* RestaurantViewController.m */,
+				5AEA8BFA183EDA35009455ED /* dishesViewController.h */,
+				5AEA8BFB183EDA35009455ED /* dishesViewController.m */,
 				5A4217C31823691300A0088E /* Setting.h */,
 				5A4217C41823691300A0088E /* Setting.m */,
 				5A12915E181F280800B0D258 /* AppDelegate.h */,
 				5A12915F181F280800B0D258 /* AppDelegate.m */,
 				5A4217C018233A9800A0088E /* Main.storyboard */,
-				0C868A73183E460000D54896 /* dishesViewController.h */,
-				0C868A74183E460000D54896 /* dishesViewController.m */,
-				0C868A35183E3DC000D54896 /* RestaurantViewController.h */,
-				0C868A36183E3DC000D54896 /* RestaurantViewController.m */,
-				0C868A70183E40ED00D54896 /* myAnnotation.h */,
-				0C868A71183E40ED00D54896 /* myAnnotation.m */,
 				5A129164181F280800B0D258 /* ViewController.h */,
 				5A129165181F280800B0D258 /* ViewController.m */,
 				5A208BBE1820211D0013CB88 /* RegisterViewController.h */,
@@ -325,7 +215,6 @@
 		5A129156181F280800B0D258 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				0C868A38183E3ED300D54896 /* 588 */,
 				5A1101D0183D8CE100E8D803 /* 1StarSmall.png */,
 				5A1101D1183D8CE100E8D803 /* 2StarsSmall.png */,
 				5A1101D2183D8CE100E8D803 /* 3StarsSmall.png */,
@@ -440,46 +329,21 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0C868A5F183E3ED300D54896 /* f3.jpg in Resources */,
-				0C868A65183E3ED300D54896 /* 傲游截图20131118164613.png in Resources */,
 				5A1101D8183D8CE100E8D803 /* 4StarsSmall.png in Resources */,
 				5A10021D183B022200EF907E /* FigueroaPhillyCheese.jpg in Resources */,
-				0C868A56183E3ED300D54896 /* d2.jpg in Resources */,
 				5A397ACB18398BDC001C3454 /* MeCover.jpg in Resources */,
-				0C868A58183E3ED300D54896 /* d4.jpg in Resources */,
 				5A1101D6183D8CE100E8D803 /* 2StarsSmall.png in Resources */,
-				0C868A67183E3ED300D54896 /* 傲游截图20131118164702.png in Resources */,
-				0C868A64183E3ED300D54896 /* 傲游截图20131118164549.png in Resources */,
 				5A129168181F280800B0D258 /* Images.xcassets in Resources */,
 				5A1101D9183D8CE100E8D803 /* 5StarsSmall.png in Resources */,
-				0C868A5B183E3ED300D54896 /* d7.jpg in Resources */,
 				5A129187181F332800B0D258 /* FlavorFood.plist in Resources */,
-				0C868A6D183E3ED300D54896 /* Soowon Galbi KBBQ Restaurant.txt in Resources */,
-				0C868A69183E3ED300D54896 /* s2.jpg in Resources */,
 				5A208BBD1820207F0013CB88 /* Flavor.plist in Resources */,
-				0C868A59183E3ED300D54896 /* d5.jpg in Resources */,
 				5A1101D7183D8CE100E8D803 /* 3StarsSmall.png in Resources */,
 				5A1101D5183D8CE100E8D803 /* 1StarSmall.png in Resources */,
-				0C868A63183E3ED300D54896 /* ms.jpg in Resources */,
-				0C868A55183E3ED300D54896 /* d1.jpg in Resources */,
 				5A4217C218233A9800A0088E /* Main.storyboard in Resources */,
-				0C868A6B183E3ED300D54896 /* s4.jpg in Resources */,
 				5A129185181F326800B0D258 /* AreaFood.plist in Resources */,
-				0C868A5A183E3ED300D54896 /* d6.jpg in Resources */,
-				0C868A5C183E3ED300D54896 /* Dino's Chicken and Burgers.txt in Resources */,
-				0C868A6C183E3ED300D54896 /* s5.jpg in Resources */,
 				5A12915A181F280800B0D258 /* InfoPlist.strings in Resources */,
-				0C868A5E183E3ED300D54896 /* f2.jpg in Resources */,
-				0C868A5D183E3ED300D54896 /* f1.jpg in Resources */,
-				0C868A60183E3ED300D54896 /* f4.jpg in Resources */,
-				0C868A61183E3ED300D54896 /* f5.jpg in Resources */,
 				5A826D34183C03920073EB9D /* Dino'sChickenandBurgers.jpg in Resources */,
-				0C868A68183E3ED300D54896 /* s1.jpg in Resources */,
-				0C868A66183E3ED300D54896 /* 傲游截图20131118164628.png in Resources */,
-				0C868A57183E3ED300D54896 /* d3.jpg in Resources */,
-				0C868A6A183E3ED300D54896 /* s3.jpg in Resources */,
 				5A826D36183C03E40073EB9D /* SoowonGalbiKBBQRestaurant.jpg in Resources */,
-				0C868A62183E3ED300D54896 /* Figueroa Philly Cheese.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -498,14 +362,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0C868A75183E460000D54896 /* dishesViewController.m in Sources */,
 				5A2CEC59183CA73600D1B919 /* MeSegmentControl.m in Sources */,
-				0C868A72183E40ED00D54896 /* myAnnotation.m in Sources */,
+				5AEA8C01183EDA44009455ED /* myAnnotation.m in Sources */,
 				5A397ACE1839A824001C3454 /* MeCell.m in Sources */,
 				5A129166181F280800B0D258 /* ViewController.m in Sources */,
 				5A129160181F280800B0D258 /* AppDelegate.m in Sources */,
 				5A4217C51823691300A0088E /* Setting.m in Sources */,
-				0C868A37183E3DC000D54896 /* RestaurantViewController.m in Sources */,
 				5A82FAFE1830B7090044525B /* HomeCell.m in Sources */,
 				5A397AC91839873D001C3454 /* MeViewController.m in Sources */,
 				5A12915C181F280800B0D258 /* main.m in Sources */,
@@ -513,6 +375,8 @@
 				5A208BC3182034950013CB88 /* TableViewController.m in Sources */,
 				5A208BC01820211D0013CB88 /* RegisterViewController.m in Sources */,
 				5A7808B91839BA6F00A26176 /* SearchViewController.m in Sources */,
+				5AEA8C02183EDA44009455ED /* RestaurantViewController.m in Sources */,
+				5AEA8BFC183EDA35009455ED /* dishesViewController.m in Sources */,
 				5A4217BC1822F27C00A0088E /* HomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
