@@ -17,7 +17,7 @@
 
 @implementation RestaurantViewController
 
-@synthesize scrollView,pageControl,imageArray,mapView,FullScrollView,Label;
+@synthesize scrollView,pageControl,imageArray,mapView,FullScrollView,Label,coords,rateImage;
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
@@ -43,8 +43,10 @@
 {
     [super viewDidLoad];
     
+    [self.rateImage setImage:[UIImage imageNamed:@"rate.png"]];
+    
     [self.FullScrollView setScrollEnabled:YES];
-    [self.FullScrollView setContentSize:CGSizeMake(320, 900)];
+    [self.FullScrollView setContentSize:CGSizeMake(320, 650)];
     
     CLLocationCoordinate2D coordinate1;
     coordinate1.latitude = 34.014961;
@@ -107,4 +109,27 @@
     return annotationView;
 }
 
+- (IBAction)GetDirection:(id)sender {
+    coords.latitude = 34.014961;
+    coords.longitude = -118.282328;
+    NSDictionary *address = @{
+                              (NSString *)kABPersonAddressStreetKey: @"3844 S Figueroa St",
+                              (NSString *)kABPersonAddressCityKey: @"Los Angeles",
+                              (NSString *)kABPersonAddressStateKey: @"CA",
+                              (NSString *)kABPersonAddressZIPKey:@"90037"
+                              };
+    
+    MKPlacemark *place = [[MKPlacemark alloc]
+                          initWithCoordinate: coords
+                          addressDictionary: address];
+    
+    MKMapItem *mapItem = [[MKMapItem alloc]initWithPlacemark:place];
+    
+    NSDictionary *options = @{
+                              MKLaunchOptionsDirectionsModeKey:MKLaunchOptionsDirectionsModeDriving
+                              };
+    
+    [mapItem openInMapsWithLaunchOptions:options];
+
+}
 @end

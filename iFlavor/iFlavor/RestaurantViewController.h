@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import <MapKit/MapKit.h>
+#import <AddressBook/AddressBook.h>
+#import <CoreLocation/CoreLocation.h>
 
 @interface RestaurantViewController : UIViewController <UIScrollViewDelegate>
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
@@ -16,5 +18,10 @@
 @property (weak, nonatomic) IBOutlet MKMapView *mapView;
 @property (weak, nonatomic) IBOutlet UILabel *Label;
 @property (strong, nonatomic) IBOutlet UIScrollView *FullScrollView;
+
+- (IBAction)GetDirection:(id)sender;
+@property CLLocationCoordinate2D coords;
+@property (strong, nonatomic) IBOutlet UIImageView *rateImage;
+
 
 @end

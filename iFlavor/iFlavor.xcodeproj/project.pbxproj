@@ -56,6 +56,7 @@
 		5A826D34183C03920073EB9D /* Dino'sChickenandBurgers.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5A826D33183C03920073EB9D /* Dino'sChickenandBurgers.jpg */; };
 		5A826D36183C03E40073EB9D /* SoowonGalbiKBBQRestaurant.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5A826D35183C03E40073EB9D /* SoowonGalbiKBBQRestaurant.jpg */; };
 		5A82FAFE1830B7090044525B /* HomeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A82FAFD1830B7090044525B /* HomeCell.m */; };
+		5ADD353B1845CC2700778958 /* rate.png in Resources */ = {isa = PBXBuildFile; fileRef = 5ADD353A1845CC2700778958 /* rate.png */; };
 		5AEA8BFC183EDA35009455ED /* dishesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AEA8BFB183EDA35009455ED /* dishesViewController.m */; };
 		5AEA8C01183EDA44009455ED /* myAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AEA8BFE183EDA44009455ED /* myAnnotation.m */; };
 		5AEA8C02183EDA44009455ED /* RestaurantViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AEA8C00183EDA44009455ED /* RestaurantViewController.m */; };
@@ -137,6 +138,7 @@
 		5A826D35183C03E40073EB9D /* SoowonGalbiKBBQRestaurant.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = SoowonGalbiKBBQRestaurant.jpg; sourceTree = "<group>"; };
 		5A82FAFC1830B7090044525B /* HomeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeCell.h; sourceTree = "<group>"; };
 		5A82FAFD1830B7090044525B /* HomeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeCell.m; sourceTree = "<group>"; };
+		5ADD353A1845CC2700778958 /* rate.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rate.png; sourceTree = "<group>"; };
 		5AEA8BFA183EDA35009455ED /* dishesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dishesViewController.h; sourceTree = "<group>"; };
 		5AEA8BFB183EDA35009455ED /* dishesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = dishesViewController.m; sourceTree = "<group>"; };
 		5AEA8BFD183EDA44009455ED /* myAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = myAnnotation.h; sourceTree = "<group>"; };
@@ -252,6 +254,7 @@
 				15A7C193183EE42C00E72C7B /* Dino's Chicken and Burgers.jpg */,
 				15A7C194183EE42C00E72C7B /* Figueroa Philly Cheese Steak Restaurant.jpg */,
 				15A7C195183EE42C00E72C7B /* Figueroa Philly Cheese Steak.jpg */,
+				5ADD353A1845CC2700778958 /* rate.png */,
 				15A7C196183EE42C00E72C7B /* Grilled Shrimp.jpg */,
 				15A7C178183EE0CD00E72C7B /* news@2x.png */,
 				15A7C179183EE0CD00E72C7B /* person@2x.png */,
@@ -381,6 +384,7 @@
 				15A7C19E183EE49900E72C7B /* Soowon Galbi KBBQ Restaurant.jpg in Resources */,
 				5A129168181F280800B0D258 /* Images.xcassets in Resources */,
 				15A7C17C183EE0CD00E72C7B /* news@2x.png in Resources */,
+				5ADD353B1845CC2700778958 /* rate.png in Resources */,
 				5A1101D9183D8CE100E8D803 /* 5StarsSmall.png in Resources */,
 				5A129187181F332800B0D258 /* FlavorFood.plist in Resources */,
 				15A7C197183EE42C00E72C7B /* Carne Asada Fries.jpg in Resources */,
