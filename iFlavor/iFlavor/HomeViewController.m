@@ -9,6 +9,7 @@
 #import "HomeViewController.h"
 #import "HomeCell.h"
 #import "RestaurantViewController.h"
+#import "dishesViewController.h"
 
 @interface HomeViewController () {
     HomeCell *layer0;
@@ -33,10 +34,10 @@
 }
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    RestaurantViewController *rvc = [segue destinationViewController];
+    dishesViewController *dvc = [segue destinationViewController];
     NSIndexPath *path = [self.homeTableView indexPathForSelectedRow];
     HomeCell *hc = [totalLayers objectAtIndex:path.row];
-    
+    dvc.index = [NSString stringWithString:hc.title];
 }
 
 -(UIImage*) drawText:(NSString*) text
@@ -69,9 +70,18 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
-    layer0 = [[HomeCell alloc]initWithTitle:@"Figueroa Philly Cheese" ranking:3 detail:@"3844 S Figueroa St"  imageName:@"FigueroaPhillyCheese.jpg"];
+    if (![[NSUserDefaults standardUserDefaults] boolForKey:@"hasPerformedFirstLaunch"]) {
+        // On first launch, this block will execute
+        
+        // Set the "hasPerformedFirstLaunch" key so this block won't execute again
+        [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"hasPerformedFirstLaunch"];
+        [[NSUserDefaults standardUserDefaults] synchronize];
+        NSLog(@"worked!");
+        [self performSegueWithIdentifier:@"FirstLaunch" sender:self];
+    }
+    layer0 = [[HomeCell alloc]initWithTitle:@"Figueroa Philly Cheese Steak" ranking:3 detail:@"3844 S Figueroa St"  imageName:@"FigueroaPhillyCheese.jpg"];
     layer1 = [[HomeCell alloc]initWithTitle:@"Dino's Chicken and Burgers" ranking:3 detail:@"2575 W Pico Blvd"  imageName:@"Dino'sChickenandBurgers.jpg"];
-    layer2 = [[HomeCell alloc]initWithTitle:@"Soowon Galbi KBBQ Restaurant" ranking:4 detail:@"856 S Vermont Ave Ste C" imageName:@"SoowonGalbiKBBQRestaurant.jpg"];
+    layer2 = [[HomeCell alloc]initWithTitle:@"Soowon Galbi KBBQ" ranking:4 detail:@"856 S Vermont Ave Ste C" imageName:@"SoowonGalbiKBBQRestaurant.jpg"];
     totalLayers = @[layer0, layer1, layer2];
     self.homePageControl.numberOfPages = [totalLayers count];
     [self.homeScrollView setContentSize:CGSizeMake(self.homeScrollView.frame.size.width*self.homePageControl.numberOfPages, self.homeScrollView.frame.size.height)];
@@ -80,6 +90,7 @@
     [self.homeTableView setDelegate:self];
     [self.homeTableView setDataSource:self];
     [self setupScrollView];
+    
 }
 
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {

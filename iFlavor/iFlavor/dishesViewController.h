@@ -21,5 +21,7 @@
 @property (strong, nonatomic) IBOutlet UIImageView *dish1;
 @property (strong, nonatomic) IBOutlet UIImageView *dish2;
 @property (strong, nonatomic) IBOutlet UIScrollView *fullScroll;
+@property (strong,nonatomic)  NSString *index;
+
 
 @end

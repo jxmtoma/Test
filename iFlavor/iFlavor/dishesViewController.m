@@ -14,7 +14,7 @@
 
 @implementation dishesViewController
 
-@synthesize imageScroll,pageControl,imageArray,coords,dish1,dish2,fullScroll;
+@synthesize imageScroll,pageControl,imageArray,coords,dish1,dish2,fullScroll,index;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -28,14 +28,33 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+
+   if ([self.index isEqualToString:@"Figueroa Philly Cheese Steak"]) {
+       [self.dish1 setImage:[UIImage imageNamed:@"f4.jpg"]];
+       [self.dish2 setImage:[UIImage imageNamed:@"f5.jpg"]];
+       imageArray = [[NSArray alloc] initWithObjects:@"f1.jpg",@"f2.jpg",@"f3.jpg",nil];
+       [self setTitle:@"Figueroa Philly Cheese Steak"];
+   }else if ([self.index isEqualToString:@"Dino's Chicken and Burgers"]){
+       [self.dish1 setImage:[UIImage imageNamed:@"d4.jpg"]];
+       [self.dish2 setImage:[UIImage imageNamed:@"d5.jpg"]];
+       imageArray = [[NSArray alloc] initWithObjects:@"d1.jpg",@"d2.jpg",@"d3.jpg",nil];
+       [self setTitle:@"Dino's Chicken and Burgers"];
+   }else if ([self.index isEqualToString:@"Soowon Galbi KBBQ"]){
+       [self.dish1 setImage:[UIImage imageNamed:@"s4.jpg"]];
+       [self.dish2 setImage:[UIImage imageNamed:@"s5.jpg"]];
+       imageArray = [[NSArray alloc] initWithObjects:@"s1.jpg",@"s2.jpg",@"s3.jpg",nil];
+       [self setTitle:@"Soowon Galbi KBBQ Restaurant"];
+   }
     
-    [self.dish1 setImage:[UIImage imageNamed:@"f4.jpg"]];
-    [self.dish2 setImage:[UIImage imageNamed:@"f5.jpg"]];
+    
+    
+    //[self.dish1 setImage:[UIImage imageNamed:@"f4.jpg"]];
+    //[self.dish2 setImage:[UIImage imageNamed:@"f5.jpg"]];
     
     [self.fullScroll setScrollEnabled:YES];
     [self.fullScroll setContentSize:CGSizeMake(320, 580)];
     
-    imageArray = [[NSArray alloc] initWithObjects:@"s1.jpg",@"s2.jpg",@"s3.jpg",nil];
+    //imageArray = [[NSArray alloc] initWithObjects:@"s1.jpg",@"s2.jpg",@"s3.jpg",nil];
     
     imageScroll.contentSize = CGSizeMake(imageScroll.frame.size.width * [imageArray count], imageScroll.frame.size.height);
     
@@ -67,14 +86,41 @@
 }
 
 - (IBAction)GetDirection:(id)sender {
-    coords.latitude = 34.014961;
-    coords.longitude = -118.282328;
-    NSDictionary *address = @{
-                              (NSString *)kABPersonAddressStreetKey: @"3844 S Figueroa St",
-                              (NSString *)kABPersonAddressCityKey: @"Los Angeles",
-                              (NSString *)kABPersonAddressStateKey: @"CA",
-                              (NSString *)kABPersonAddressZIPKey:@"90037"
-                              };
+    
+    self.index = @"ccc";
+    NSDictionary * address;
+    if ([self.index isEqualToString:@"abc"]) {
+        coords.latitude = 34.014961;
+        coords.longitude = -118.282328;
+        
+        address = @{
+                                   (NSString *)kABPersonAddressStreetKey: @"3844 S Figueroa St",
+                                   (NSString *)kABPersonAddressCityKey: @"Los Angeles",
+                                   (NSString *)kABPersonAddressStateKey: @"CA",
+                                   (NSString *)kABPersonAddressZIPKey:@"90037"
+                                   };
+
+    }else if ([self.index isEqualToString:@"bbb"]){
+        coords.latitude = 34.047788;
+        coords.longitude = -118.293894;
+        address = @{
+                    (NSString *)kABPersonAddressStreetKey: @"2575 W Pico Blvd",
+                    (NSString *)kABPersonAddressCityKey: @"Los Angeles",
+                    (NSString *)kABPersonAddressStateKey: @"CA",
+                    (NSString *)kABPersonAddressZIPKey:@"90006"
+                    };
+
+    }else if ([self.index isEqualToString:@"ccc"]){
+        coords.latitude = 34.056686;
+        coords.longitude = -118.291448;
+        address = @{
+                    (NSString *)kABPersonAddressStreetKey: @"856 S Vermont Ave Ste C",
+                    (NSString *)kABPersonAddressCityKey: @"Los Angeles",
+                    (NSString *)kABPersonAddressStateKey: @"CA",
+                    (NSString *)kABPersonAddressZIPKey:@"90005"
+                    };
+        
+    }
     
     MKPlacemark *place = [[MKPlacemark alloc]
                           initWithCoordinate: coords

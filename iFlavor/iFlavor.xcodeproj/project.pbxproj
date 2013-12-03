@@ -44,6 +44,8 @@
 		5A208BBD1820207F0013CB88 /* Flavor.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5A208BBC1820207F0013CB88 /* Flavor.plist */; };
 		5A208BC01820211D0013CB88 /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A208BBF1820211D0013CB88 /* RegisterViewController.m */; };
 		5A208BC3182034950013CB88 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A208BC2182034950013CB88 /* TableViewController.m */; };
+		5A21F3FA184E4A17005BF6CF /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A21F3F9184E4A17005BF6CF /* AboutViewController.m */; };
+		5A21F402184E76DF005BF6CF /* help1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5A21F401184E76DF005BF6CF /* help1.jpg */; };
 		5A2CEC59183CA73600D1B919 /* MeSegmentControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A2CEC58183CA73600D1B919 /* MeSegmentControl.m */; };
 		5A397AC91839873D001C3454 /* MeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A397AC81839873D001C3454 /* MeViewController.m */; };
 		5A397ACB18398BDC001C3454 /* MeCover.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5A397ACA18398BDC001C3454 /* MeCover.jpg */; };
@@ -60,6 +62,7 @@
 		5AEA8BFC183EDA35009455ED /* dishesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AEA8BFB183EDA35009455ED /* dishesViewController.m */; };
 		5AEA8C01183EDA44009455ED /* myAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AEA8BFE183EDA44009455ED /* myAnnotation.m */; };
 		5AEA8C02183EDA44009455ED /* RestaurantViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AEA8C00183EDA44009455ED /* RestaurantViewController.m */; };
+		5AFCFCF3184DC5EE0052C498 /* GuideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AFCFCF2184DC5EE0052C498 /* GuideViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -118,6 +121,9 @@
 		5A208BBF1820211D0013CB88 /* RegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = "<group>"; };
 		5A208BC1182034950013CB88 /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
 		5A208BC2182034950013CB88 /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
+		5A21F3F8184E4A17005BF6CF /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
+		5A21F3F9184E4A17005BF6CF /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
+		5A21F401184E76DF005BF6CF /* help1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = help1.jpg; sourceTree = "<group>"; };
 		5A2CEC57183CA73600D1B919 /* MeSegmentControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeSegmentControl.h; sourceTree = "<group>"; };
 		5A2CEC58183CA73600D1B919 /* MeSegmentControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeSegmentControl.m; sourceTree = "<group>"; };
 		5A397AC71839873D001C3454 /* MeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeViewController.h; sourceTree = "<group>"; };
@@ -145,6 +151,8 @@
 		5AEA8BFE183EDA44009455ED /* myAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = myAnnotation.m; sourceTree = "<group>"; };
 		5AEA8BFF183EDA44009455ED /* RestaurantViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RestaurantViewController.h; sourceTree = "<group>"; };
 		5AEA8C00183EDA44009455ED /* RestaurantViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RestaurantViewController.m; sourceTree = "<group>"; };
+		5AFCFCF1184DC5EE0052C498 /* GuideViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GuideViewController.h; sourceTree = "<group>"; };
+		5AFCFCF2184DC5EE0052C498 /* GuideViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GuideViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -215,6 +223,10 @@
 				5A12915E181F280800B0D258 /* AppDelegate.h */,
 				5A12915F181F280800B0D258 /* AppDelegate.m */,
 				5A4217C018233A9800A0088E /* Main.storyboard */,
+				5A21F3F8184E4A17005BF6CF /* AboutViewController.h */,
+				5A21F3F9184E4A17005BF6CF /* AboutViewController.m */,
+				5AFCFCF1184DC5EE0052C498 /* GuideViewController.h */,
+				5AFCFCF2184DC5EE0052C498 /* GuideViewController.m */,
 				5A129164181F280800B0D258 /* ViewController.h */,
 				5A129165181F280800B0D258 /* ViewController.m */,
 				5A208BBE1820211D0013CB88 /* RegisterViewController.h */,
@@ -252,6 +264,7 @@
 				15A7C191183EE42C00E72C7B /* Carne Asada Fries.jpg */,
 				15A7C192183EE42C00E72C7B /* Dino's Chicken and Burgers Restaurant.jpg */,
 				15A7C193183EE42C00E72C7B /* Dino's Chicken and Burgers.jpg */,
+				5A21F401184E76DF005BF6CF /* help1.jpg */,
 				15A7C194183EE42C00E72C7B /* Figueroa Philly Cheese Steak Restaurant.jpg */,
 				15A7C195183EE42C00E72C7B /* Figueroa Philly Cheese Steak.jpg */,
 				5ADD353A1845CC2700778958 /* rate.png */,
@@ -374,6 +387,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5A1101D8183D8CE100E8D803 /* 4StarsSmall.png in Resources */,
+				5A21F402184E76DF005BF6CF /* help1.jpg in Resources */,
 				5A10021D183B022200EF907E /* FigueroaPhillyCheese.jpg in Resources */,
 				5A397ACB18398BDC001C3454 /* MeCover.jpg in Resources */,
 				15A7C199183EE42C00E72C7B /* Dino's Chicken and Burgers.jpg in Resources */,
@@ -432,10 +446,12 @@
 				5A4217BF18233A0D00A0088E /* SettingViewController.m in Sources */,
 				5A208BC3182034950013CB88 /* TableViewController.m in Sources */,
 				5A208BC01820211D0013CB88 /* RegisterViewController.m in Sources */,
+				5A21F3FA184E4A17005BF6CF /* AboutViewController.m in Sources */,
 				5A7808B91839BA6F00A26176 /* SearchViewController.m in Sources */,
 				5AEA8C02183EDA44009455ED /* RestaurantViewController.m in Sources */,
 				5AEA8BFC183EDA35009455ED /* dishesViewController.m in Sources */,
 				5A4217BC1822F27C00A0088E /* HomeViewController.m in Sources */,
+				5AFCFCF3184DC5EE0052C498 /* GuideViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

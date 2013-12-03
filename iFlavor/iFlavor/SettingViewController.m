@@ -8,6 +8,7 @@
 
 #import "SettingViewController.h"
 #import "Setting.h"
+#import "AboutViewController.h"
 
 @interface SettingViewController ()
 
@@ -59,7 +60,16 @@
     
     
     switch (indexPath.row) {
+        
         case 0: {
+            UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+            
+            [[cell textLabel] setText:@"About this app"];
+            return cell;
+            
+        }
+            break;
+        case 1: {
             //notification
             UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
             UISwitch *uiSwitch = [[UISwitch alloc] initWithFrame:CGRectZero];
@@ -71,7 +81,7 @@
             return cell;
         }
             break;
-        case 1: {
+        case 2: {
             UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
             
             [[cell textLabel] setText:@"Rating this app"];
@@ -79,7 +89,7 @@
             
         }
             break;
-        case 2: {
+        case 3: {
             UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
             
 //            cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"Cell"];
@@ -88,7 +98,7 @@
             
         }
             break;
-        case 3: {
+        case 4: {
             UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
             
             [[cell textLabel] setText:@"Privacy"];
@@ -96,7 +106,7 @@
             
         }
             break;
-        case 4: {
+        case 5: {
             UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
             
             [[cell textLabel] setText:@"Log Out"];
@@ -117,8 +127,12 @@
         [actionSheet showInView:self.view];
         
     }
-    if (indexPath.row == 3) {
-        //privacy
+    if (indexPath.row == 0) {
+        //about
+        UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+        AboutViewController *avc = [sb instantiateViewControllerWithIdentifier:@"AboutViewController"];
+        [self.navigationController pushViewController:avc animated:YES];
+        
     }
     if (indexPath.row == 4) {
         //log out

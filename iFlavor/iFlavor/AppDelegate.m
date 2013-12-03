@@ -7,12 +7,27 @@
 //
 
 #import "AppDelegate.h"
+#import "GuideViewController.h"
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    if ([[NSUserDefaults standardUserDefaults] boolForKey:@"HasLaunchedOnce"])
+    {
+        // app already launched
+        return NO;
+    }
+    else
+    {
+        [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"HasLaunchedOnce"];
+        [[NSUserDefaults standardUserDefaults] synchronize];
+        // This is the first launch ever
+        UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Main" bundle:Nil];
+        GuideViewController *gvc = [sb instantiateViewControllerWithIdentifier:@"GuideViewController"];
+        return YES;
+    }
     return YES;
 }
 							

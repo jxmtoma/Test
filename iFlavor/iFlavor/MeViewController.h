@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "MeSegmentControl.h"
+#import "RestaurantPreviewCell.h"
 
 @interface MeViewController : UIViewController<UITableViewDelegate, UITableViewDataSource>
 

@@ -7,6 +7,8 @@
 //
 
 #import "SearchViewController.h"
+#import "RestaurantViewController.h"
+#import "dishesViewController.h"
 
 @interface SearchViewController () {
     BOOL isFiltered;
@@ -196,6 +198,23 @@
 
 -(CGFloat) tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     return 70;
+}
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    if (searchBar.selectedScopeButtonIndex == 0) {
+        //restaurant
+        UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Main" bundle:Nil];
+        dishesViewController *rvc = [sb instantiateViewControllerWithIdentifier:@"dishesViewController"];
+        rvc.index = [NSString stringWithString:[restNameArray objectAtIndex:indexPath.row]];
+        [self.navigationController pushViewController:rvc animated:YES];
+    }
+    if (searchBar.selectedScopeButtonIndex == 1) {
+        //dish
+        UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Main" bundle:Nil];
+        RestaurantViewController *dvc = [sb instantiateViewControllerWithIdentifier:@"RestaurantViewController"];
+        [self.navigationController pushViewController:dvc animated:YES];
+    }
+    
 }
 
 - (void)didReceiveMemoryWarning
