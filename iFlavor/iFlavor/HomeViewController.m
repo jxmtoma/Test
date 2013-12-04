@@ -70,15 +70,15 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
-    if (![[NSUserDefaults standardUserDefaults] boolForKey:@"hasPerformedFirstLaunch"]) {
-        // On first launch, this block will execute
-        
-        // Set the "hasPerformedFirstLaunch" key so this block won't execute again
-        [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"hasPerformedFirstLaunch"];
-        [[NSUserDefaults standardUserDefaults] synchronize];
-        NSLog(@"worked!");
-        [self performSegueWithIdentifier:@"FirstLaunch" sender:self];
-    }
+//    if (![[NSUserDefaults standardUserDefaults] boolForKey:@"hasPerformedFirstLaunch"]) {
+//        // On first launch, this block will execute
+//        
+//        // Set the "hasPerformedFirstLaunch" key so this block won't execute again
+//        [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"hasPerformedFirstLaunch"];
+//        [[NSUserDefaults standardUserDefaults] synchronize];
+//        NSLog(@"worked!");
+//        [self performSegueWithIdentifier:@"FirstLaunch" sender:self];
+//    }
     layer0 = [[HomeCell alloc]initWithTitle:@"Figueroa Philly Cheese Steak" ranking:3 detail:@"3844 S Figueroa St"  imageName:@"FigueroaPhillyCheese.jpg"];
     layer1 = [[HomeCell alloc]initWithTitle:@"Dino's Chicken and Burgers" ranking:3 detail:@"2575 W Pico Blvd"  imageName:@"Dino'sChickenandBurgers.jpg"];
     layer2 = [[HomeCell alloc]initWithTitle:@"Soowon Galbi KBBQ" ranking:4 detail:@"856 S Vermont Ave Ste C" imageName:@"SoowonGalbiKBBQRestaurant.jpg"];

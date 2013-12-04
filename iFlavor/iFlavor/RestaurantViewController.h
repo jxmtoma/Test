@@ -23,5 +23,7 @@
 @property CLLocationCoordinate2D coords;
 @property (strong, nonatomic) IBOutlet UIImageView *rateImage;
 
+@property (strong,nonatomic)  NSString *index;
+- (IBAction)AddToFavorite:(id)sender;
 
 @end

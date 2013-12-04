@@ -212,6 +212,7 @@
         //dish
         UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Main" bundle:Nil];
         RestaurantViewController *dvc = [sb instantiateViewControllerWithIdentifier:@"RestaurantViewController"];
+        dvc.index = [NSString stringWithString:[dishNameArray objectAtIndex:indexPath.row]];
         [self.navigationController pushViewController:dvc animated:YES];
     }
     

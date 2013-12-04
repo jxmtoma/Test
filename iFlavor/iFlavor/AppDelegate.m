@@ -17,15 +17,19 @@
     if ([[NSUserDefaults standardUserDefaults] boolForKey:@"HasLaunchedOnce"])
     {
         // app already launched
+        
         return NO;
     }
     else
     {
+        NSLog(@"worked");
         [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"HasLaunchedOnce"];
         [[NSUserDefaults standardUserDefaults] synchronize];
         // This is the first launch ever
         UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Main" bundle:Nil];
         GuideViewController *gvc = [sb instantiateViewControllerWithIdentifier:@"GuideViewController"];
+        gvc.setOrNot = NO;
+        self.window.rootViewController = gvc;
         return YES;
     }
     return YES;

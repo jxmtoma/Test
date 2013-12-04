@@ -79,13 +79,13 @@
         cell.rating.text = [NSString stringWithString:ratingString];
         cell.imageLabel.image = [restImageArray objectAtIndex:indexPath.row];
     } else if (self.meSegmentedControl.selectedSegmentIndex == 1) {
-        cell.titleLabel.text = [restNameArray objectAtIndex:indexPath.row];
-        cell.subtitleLabel.text = [restLocArray objectAtIndex:indexPath.row];
-        cell.distance.text = [restDisArray objectAtIndex:indexPath.row];
+        cell.titleLabel.text = [restNameArray objectAtIndex:indexPath.row+1];
+        cell.subtitleLabel.text = [restLocArray objectAtIndex:indexPath.row+1];
+        cell.distance.text = [restDisArray objectAtIndex:indexPath.row+1];
         //cell.expense.text = [restExpArray objectAtIndex:indexPath.row];
         //cell.expense.hidden = YES;
         
-        NSNumber *arating = [restRatingArray objectAtIndex:indexPath.row];
+        NSNumber *arating = [restRatingArray objectAtIndex:indexPath.row+1];
         NSMutableString *ratingString = [[NSMutableString alloc] init];
         const char starFill[4] = {0xE2, 0x98, 0x85, 0x00};
         const char starEmpty[4] = {0xE2, 0x98, 0x86, 0x00};
@@ -97,7 +97,7 @@
             }
         }
         cell.rating.text = [NSString stringWithString:ratingString];
-        cell.imageLabel.image = [restImageArray objectAtIndex:indexPath.row];
+        cell.imageLabel.image = [restImageArray objectAtIndex:indexPath.row+1];
     } else if (self.meSegmentedControl.selectedSegmentIndex == 2) {
         cell.titleLabel.text = [dishNameArray objectAtIndex:indexPath.row];
         NSNumber *arating = [dishRatingArray objectAtIndex:indexPath.row];
@@ -131,6 +131,18 @@
         UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Main" bundle:Nil];
         dishesViewController *rvc = [sb instantiateViewControllerWithIdentifier:@"dishesViewController"];
         rvc.index = [NSString stringWithString:[restNameArray objectAtIndex:indexPath.row]];
+        [self.navigationController pushViewController:rvc animated:YES];
+    }
+    if (self.meSegmentedControl.selectedSegmentIndex == 1) {
+        UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Main" bundle:Nil];
+        dishesViewController *rvc = [sb instantiateViewControllerWithIdentifier:@"dishesViewController"];
+        rvc.index = [NSString stringWithString:[restNameArray objectAtIndex:indexPath.row]];
+        [self.navigationController pushViewController:rvc animated:YES];
+    }
+    if (self.meSegmentedControl.selectedSegmentIndex == 2) {
+        UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Main" bundle:Nil];
+        RestaurantViewController *rvc = [sb instantiateViewControllerWithIdentifier:@"RestaurantViewController"];
+        rvc.index = [NSString stringWithString:[dishNameArray objectAtIndex:indexPath.row]];
         [self.navigationController pushViewController:rvc animated:YES];
     }
 }

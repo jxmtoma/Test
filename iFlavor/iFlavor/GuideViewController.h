@@ -11,6 +11,6 @@
 @interface GuideViewController : UIViewController
 
 @property (weak, nonatomic) IBOutlet UIImageView *guideImage;
-
+@property BOOL setOrNot;
 
 @end

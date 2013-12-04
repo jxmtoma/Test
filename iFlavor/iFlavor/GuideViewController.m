@@ -16,7 +16,7 @@
 @end
 
 @implementation GuideViewController
-@synthesize guideImage;
+@synthesize guideImage, setOrNot;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -32,7 +32,7 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     tapNumber = 0;
-    [self.guideImage setImage:[UIImage imageNamed:@"help1.jpg"]];
+    [self.guideImage setImage:[UIImage imageNamed:@"guideStart.jpg"]];
     UITapGestureRecognizer *tapRecognizer = [[UITapGestureRecognizer alloc]
                                              initWithTarget:self action:@selector(respondToTapGesture)];
     
@@ -46,16 +46,61 @@
 
 -(void)respondToTapGesture {
     switch (tapNumber) {
-        case 0:
+        case 0: {
+            [self.guideImage setImage:[UIImage imageNamed:@"help_home1.jpg"]];
+            tapNumber++;
+        }
+            break;
+        case 1: {
+            [self.guideImage setImage:[UIImage imageNamed:@"help_search1.jpg"]];
+            tapNumber++;
+        }
+            break;
+        case 2: {
+            [self.guideImage setImage:[UIImage imageNamed:@"help_me1.jpg"]];
+            tapNumber++;
+        }
+            break;
+        case 3: {
+            [self.guideImage setImage:[UIImage imageNamed:@"help_me2.jpg"]];
+            tapNumber++;
+        }
+            break;
+        case 4: {
+            [self.guideImage setImage:[UIImage imageNamed:@"help_me3.jpg"]];
+            tapNumber++;
+        }
+            break;
+        case 5: {
+            [self.guideImage setImage:[UIImage imageNamed:@"help_me4.jpg"]];
+            tapNumber++;
+        }
+            break;
+        case 6: {
+            [self.guideImage setImage:[UIImage imageNamed:@"help_restuarant1.jpg"]];
+            tapNumber++;
+        }
+            break;
+        case 7: {
+            [self.guideImage setImage:[UIImage imageNamed:@"help_dish1.jpg"]];
+            tapNumber++;
+        }
+            break;
+        case 8:{
+            if (setOrNot) {
+                UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"Oops" message:@"No Guide Left!" delegate:Nil cancelButtonTitle:@"OK" otherButtonTitles: nil];
+                [alert show];
+                
+            }
+            else
+                [self performSegueWithIdentifier:@"BackToHome" sender:self];
+        }
+            break;
             
-            break;
-        case 1:
-            break;
-        case 5:
-            [self performSegueWithIdentifier:@"BackToHome" sender:self];
-            break;
-            
-        default:
+        default: {
+            UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"Oops" message:@"No Guide Left!" delegate:Nil cancelButtonTitle:@"OK" otherButtonTitles: nil];
+            [alert show];
+        }
             break;
     }
 }

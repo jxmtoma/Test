@@ -9,6 +9,7 @@
 #import "SettingViewController.h"
 #import "Setting.h"
 #import "AboutViewController.h"
+#import "GuideViewController.h"
 
 @interface SettingViewController ()
 
@@ -51,7 +52,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 5;
+    return 6;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -101,7 +102,7 @@
         case 4: {
             UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
             
-            [[cell textLabel] setText:@"Privacy"];
+            [[cell textLabel] setText:@"Usage Guide"];
             return cell;
             
         }
@@ -120,7 +121,7 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (indexPath.row == 2) {
+    if (indexPath.row == 3) {
         //clear history
         UIActionSheet *actionSheet = [[UIActionSheet alloc] initWithTitle:@"Clear History" delegate:self cancelButtonTitle:@"Cancel" destructiveButtonTitle:@"Clear" otherButtonTitles:nil];
         actionSheet.actionSheetStyle = UIActionSheetStyleDefault;
@@ -135,6 +136,14 @@
         
     }
     if (indexPath.row == 4) {
+        //guide
+        UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+        GuideViewController *gvc = [sb instantiateViewControllerWithIdentifier:@"GuideViewController"];
+        gvc.setOrNot = YES;
+        [self.navigationController pushViewController:gvc animated:YES];
+        
+    }
+    if (indexPath.row == 5) {
         //log out
         UIActionSheet *actionSheet = [[UIActionSheet alloc] initWithTitle:@"Are you sure to log out" delegate:self cancelButtonTitle:@"Cancel" destructiveButtonTitle:@"Log Out" otherButtonTitles:nil];
         actionSheet.actionSheetStyle = UIActionSheetStyleDefault;

@@ -23,5 +23,10 @@
 @property (strong, nonatomic) IBOutlet UIScrollView *fullScroll;
 @property (strong,nonatomic)  NSString *index;
 
+@property (weak, nonatomic) IBOutlet UILabel *dishName1;
+@property (weak, nonatomic) IBOutlet UILabel *dishName2;
 
+- (IBAction)AddToFavorite:(id)sender;
+@property (weak, nonatomic) IBOutlet UILabel *Rate1;
+@property (weak, nonatomic) IBOutlet UILabel *Rate2;
 @end
